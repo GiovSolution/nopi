@@ -1,0 +1,1 @@
+ALTER TABLE `produk` ADD `produk_kategori2` ENUM( 'Lokal', 'Import', 'Barang Sendiri' ) NOT NULL AFTER `produk_kategori` 

@@ -1,0 +1,29 @@
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed'); ?>
+
+ERROR - 2013-07-09 16:33:53 --> Severity: Notice  --> Undefined index:  master_id /Applications/MAMP/htdocs/nopi/system/application/controllers/c_master_retur_beli.php 162
+ERROR - 2013-07-09 16:33:58 --> Severity: Notice  --> Undefined index:  master_id /Applications/MAMP/htdocs/nopi/system/application/controllers/c_master_retur_beli.php 162
+ERROR - 2013-07-09 16:34:08 --> Severity: Notice  --> Undefined index:  master_id /Applications/MAMP/htdocs/nopi/system/application/controllers/c_master_retur_beli.php 162
+ERROR - 2013-07-09 16:35:05 --> Severity: Notice  --> Undefined index:  master_id /Applications/MAMP/htdocs/nopi/system/application/controllers/c_master_retur_beli.php 162
+ERROR - 2013-07-09 16:35:05 --> Severity: Notice  --> Undefined index:  master_id /Applications/MAMP/htdocs/nopi/system/application/controllers/c_master_retur_beli.php 162
+ERROR - 2013-07-09 16:35:12 --> Severity: Notice  --> Undefined index:  master_id /Applications/MAMP/htdocs/nopi/system/application/controllers/c_master_retur_beli.php 162
+ERROR - 2013-07-09 16:39:20 --> Severity: Notice  --> Undefined index:  master_id /Applications/MAMP/htdocs/nopi/system/application/controllers/c_master_retur_beli.php 162
+ERROR - 2013-07-09 16:39:21 --> Severity: Notice  --> Undefined index:  master_id /Applications/MAMP/htdocs/nopi/system/application/controllers/c_master_retur_beli.php 162
+ERROR - 2013-07-09 16:40:00 --> Severity: Notice  --> Undefined index:  master_id /Applications/MAMP/htdocs/nopi/system/application/controllers/c_master_retur_beli.php 162
+ERROR - 2013-07-09 16:40:04 --> Severity: Notice  --> Undefined index:  master_id /Applications/MAMP/htdocs/nopi/system/application/controllers/c_master_retur_beli.php 162
+ERROR - 2013-07-09 16:44:30 --> Severity: Notice  --> Undefined index:  master_id /Applications/MAMP/htdocs/nopi/system/application/controllers/c_master_retur_beli.php 162
+ERROR - 2013-07-09 16:44:30 --> Severity: Notice  --> Undefined index:  master_id /Applications/MAMP/htdocs/nopi/system/application/controllers/c_master_retur_beli.php 162
+ERROR - 2013-07-09 16:44:34 --> Severity: Notice  --> Undefined index:  master_id /Applications/MAMP/htdocs/nopi/system/application/controllers/c_master_retur_beli.php 162
+ERROR - 2013-07-09 16:47:51 --> Severity: Notice  --> Undefined index:  master_id /Applications/MAMP/htdocs/nopi/system/application/controllers/c_master_retur_beli.php 162
+ERROR - 2013-07-09 16:47:56 --> Severity: Notice  --> Undefined index:  master_id /Applications/MAMP/htdocs/nopi/system/application/controllers/c_master_retur_beli.php 162
+ERROR - 2013-07-09 16:47:59 --> Severity: Notice  --> Undefined index:  master_id /Applications/MAMP/htdocs/nopi/system/application/controllers/c_master_retur_beli.php 162
+ERROR - 2013-07-09 16:47:59 --> Severity: Notice  --> Undefined index:  master_id /Applications/MAMP/htdocs/nopi/system/application/controllers/c_master_retur_beli.php 162
+ERROR - 2013-07-09 16:48:02 --> Severity: Notice  --> Undefined index:  master_id /Applications/MAMP/htdocs/nopi/system/application/controllers/c_master_retur_beli.php 162
+ERROR - 2013-07-09 16:48:07 --> Severity: Notice  --> Undefined index:  master_id /Applications/MAMP/htdocs/nopi/system/application/controllers/c_master_retur_beli.php 162
+ERROR - 2013-07-09 16:48:07 --> Severity: Notice  --> Undefined index:  master_id /Applications/MAMP/htdocs/nopi/system/application/controllers/c_master_retur_beli.php 162
+ERROR - 2013-07-09 16:48:07 --> Severity: Notice  --> Undefined index:  master_id /Applications/MAMP/htdocs/nopi/system/application/controllers/c_master_retur_beli.php 162
+ERROR - 2013-07-09 16:48:11 --> Severity: Notice  --> Undefined index:  master_id /Applications/MAMP/htdocs/nopi/system/application/controllers/c_master_retur_beli.php 162
+ERROR - 2013-07-09 16:48:25 --> Severity: Notice  --> Undefined index:  master_id /Applications/MAMP/htdocs/nopi/system/application/controllers/c_master_retur_beli.php 162
+ERROR - 2013-07-09 16:48:25 --> Severity: Notice  --> Undefined index:  master_id /Applications/MAMP/htdocs/nopi/system/application/controllers/c_master_retur_beli.php 162
+ERROR - 2013-07-09 16:48:25 --> Severity: Notice  --> Undefined index:  master_id /Applications/MAMP/htdocs/nopi/system/application/controllers/c_master_retur_beli.php 162
+ERROR - 2013-07-09 16:48:25 --> Severity: Notice  --> Undefined index:  master_id /Applications/MAMP/htdocs/nopi/system/application/controllers/c_master_retur_beli.php 162
+ERROR - 2013-07-09 16:48:28 --> Severity: Notice  --> Undefined index:  master_id /Applications/MAMP/htdocs/nopi/system/application/controllers/c_master_retur_beli.php 162

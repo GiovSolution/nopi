@@ -1,0 +1,36 @@
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed'); ?>
+
+ERROR - 2012-06-15 14:20:15 --> Severity: Notice  --> Undefined index:  selected_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_mutasi.php 167
+ERROR - 2012-06-15 14:20:15 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_mutasi.php 168
+ERROR - 2012-06-15 14:20:36 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_mutasi.php 149
+ERROR - 2012-06-15 14:20:36 --> Severity: Notice  --> Undefined index:  selected_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_mutasi.php 151
+ERROR - 2012-06-15 14:20:36 --> Severity: Notice  --> Undefined index:  no_ref D:\xampp\htdocs\nopi\system\application\controllers\c_master_mutasi.php 152
+ERROR - 2012-06-15 14:20:38 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_mutasi.php 168
+ERROR - 2012-06-15 14:20:38 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_mutasi.php 168
+ERROR - 2012-06-15 14:20:49 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_mutasi.php 149
+ERROR - 2012-06-15 14:20:49 --> Severity: Notice  --> Undefined index:  no_ref D:\xampp\htdocs\nopi\system\application\controllers\c_master_mutasi.php 152
+ERROR - 2012-06-15 14:20:49 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_mutasi.php 149
+ERROR - 2012-06-15 14:20:49 --> Severity: Notice  --> Undefined index:  no_ref D:\xampp\htdocs\nopi\system\application\controllers\c_master_mutasi.php 152
+ERROR - 2012-06-15 14:20:49 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_mutasi.php 168
+ERROR - 2012-06-15 14:20:49 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_mutasi.php 168
+ERROR - 2012-06-15 14:20:56 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_mutasi.php 149
+ERROR - 2012-06-15 14:20:56 --> Severity: Notice  --> Undefined index:  no_ref D:\xampp\htdocs\nopi\system\application\controllers\c_master_mutasi.php 152
+ERROR - 2012-06-15 14:21:00 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_mutasi.php 168
+ERROR - 2012-06-15 14:21:00 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_mutasi.php 168
+ERROR - 2012-06-15 14:21:19 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_mutasi.php 149
+ERROR - 2012-06-15 14:21:19 --> Severity: Notice  --> Undefined index:  no_ref D:\xampp\htdocs\nopi\system\application\controllers\c_master_mutasi.php 152
+ERROR - 2012-06-15 14:21:19 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_mutasi.php 168
+ERROR - 2012-06-15 14:21:19 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_mutasi.php 149
+ERROR - 2012-06-15 14:21:19 --> Severity: Notice  --> Undefined index:  no_ref D:\xampp\htdocs\nopi\system\application\controllers\c_master_mutasi.php 152
+ERROR - 2012-06-15 14:21:20 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_mutasi.php 168
+ERROR - 2012-06-15 14:21:37 --> Severity: Notice  --> Undefined index:  racikan_produk D:\xampp\htdocs\nopi\system\application\controllers\c_master_mutasi.php 428
+ERROR - 2012-06-15 14:21:37 --> Severity: Notice  --> Undefined index:  racikan_jumlah D:\xampp\htdocs\nopi\system\application\controllers\c_master_mutasi.php 429
+ERROR - 2012-06-15 14:21:37 --> Severity: Notice  --> Undefined index:  racikan_satuan D:\xampp\htdocs\nopi\system\application\controllers\c_master_mutasi.php 430
+ERROR - 2012-06-15 14:22:01 --> Severity: Notice  --> Undefined index:  satuan D:\xampp\htdocs\nopi\system\application\controllers\c_hpp.php 33
+ERROR - 2012-06-15 14:22:40 --> Severity: Notice  --> Undefined index:  satuan D:\xampp\htdocs\nopi\system\application\controllers\c_hpp.php 33
+ERROR - 2012-06-15 14:22:43 --> Severity: Notice  --> Undefined index:  query D:\xampp\htdocs\nopi\system\application\controllers\c_kartu_stok.php 53
+ERROR - 2012-06-15 14:22:43 --> Severity: Notice  --> Undefined index:  start D:\xampp\htdocs\nopi\system\application\controllers\c_kartu_stok.php 54
+ERROR - 2012-06-15 14:22:43 --> Severity: Notice  --> Undefined index:  limit D:\xampp\htdocs\nopi\system\application\controllers\c_kartu_stok.php 55
+ERROR - 2012-06-15 14:22:44 --> Severity: Notice  --> Undefined index:  query D:\xampp\htdocs\nopi\system\application\controllers\c_kartu_stok.php 96
+ERROR - 2012-06-15 14:22:44 --> Severity: Notice  --> Undefined index:  start D:\xampp\htdocs\nopi\system\application\controllers\c_kartu_stok.php 97
+ERROR - 2012-06-15 14:22:44 --> Severity: Notice  --> Undefined index:  limit D:\xampp\htdocs\nopi\system\application\controllers\c_kartu_stok.php 98

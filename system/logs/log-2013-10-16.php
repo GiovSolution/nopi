@@ -1,0 +1,29 @@
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed'); ?>
+
+ERROR - 2013-10-16 11:32:55 --> Severity: Notice  --> Undefined index:  cust_id /Applications/MAMP/htdocs/nopi/system/application/controllers/c_customer.php 1142
+ERROR - 2013-10-16 11:32:55 --> Severity: Notice  --> Undefined index:  cust_umur /Applications/MAMP/htdocs/nopi/system/application/controllers/c_customer.php 1209
+ERROR - 2013-10-16 11:32:55 --> Severity: Notice  --> Undefined index:  cust_creator /Applications/MAMP/htdocs/nopi/system/application/controllers/c_customer.php 1253
+ERROR - 2013-10-16 11:32:55 --> Severity: Notice  --> Undefined index:  cust_date_create /Applications/MAMP/htdocs/nopi/system/application/controllers/c_customer.php 1256
+ERROR - 2013-10-16 11:32:55 --> Severity: Notice  --> Undefined index:  cust_update /Applications/MAMP/htdocs/nopi/system/application/controllers/c_customer.php 1257
+ERROR - 2013-10-16 11:32:55 --> Severity: Notice  --> Undefined index:  cust_date_update /Applications/MAMP/htdocs/nopi/system/application/controllers/c_customer.php 1260
+ERROR - 2013-10-16 11:32:55 --> Severity: Notice  --> Undefined index:  cust_revised /Applications/MAMP/htdocs/nopi/system/application/controllers/c_customer.php 1261
+ERROR - 2013-10-16 11:32:55 --> Severity: Notice  --> Undefined index:  cust_tgldaftarend /Applications/MAMP/htdocs/nopi/system/application/controllers/c_customer.php 1273
+ERROR - 2013-10-16 11:32:55 --> Severity: Notice  --> Undefined index:  cust_tgldaftarend /Applications/MAMP/htdocs/nopi/system/application/controllers/c_customer.php 1274
+ERROR - 2013-10-16 11:33:06 --> Severity: Notice  --> Undefined index:  cust_id /Applications/MAMP/htdocs/nopi/system/application/controllers/c_customer.php 1142
+ERROR - 2013-10-16 11:33:06 --> Severity: Notice  --> Undefined index:  cust_umur /Applications/MAMP/htdocs/nopi/system/application/controllers/c_customer.php 1209
+ERROR - 2013-10-16 11:33:06 --> Severity: Notice  --> Undefined index:  cust_creator /Applications/MAMP/htdocs/nopi/system/application/controllers/c_customer.php 1253
+ERROR - 2013-10-16 11:33:06 --> Severity: Notice  --> Undefined index:  cust_date_create /Applications/MAMP/htdocs/nopi/system/application/controllers/c_customer.php 1256
+ERROR - 2013-10-16 11:33:06 --> Severity: Notice  --> Undefined index:  cust_update /Applications/MAMP/htdocs/nopi/system/application/controllers/c_customer.php 1257
+ERROR - 2013-10-16 11:33:06 --> Severity: Notice  --> Undefined index:  cust_date_update /Applications/MAMP/htdocs/nopi/system/application/controllers/c_customer.php 1260
+ERROR - 2013-10-16 11:33:06 --> Severity: Notice  --> Undefined index:  cust_revised /Applications/MAMP/htdocs/nopi/system/application/controllers/c_customer.php 1261
+ERROR - 2013-10-16 11:33:06 --> Severity: Notice  --> Undefined index:  cust_tgldaftarend /Applications/MAMP/htdocs/nopi/system/application/controllers/c_customer.php 1273
+ERROR - 2013-10-16 11:33:06 --> Severity: Notice  --> Undefined index:  cust_tgldaftarend /Applications/MAMP/htdocs/nopi/system/application/controllers/c_customer.php 1274
+ERROR - 2013-10-16 11:33:25 --> Severity: Notice  --> Undefined index:  cust_id /Applications/MAMP/htdocs/nopi/system/application/controllers/c_customer.php 1142
+ERROR - 2013-10-16 11:33:25 --> Severity: Notice  --> Undefined index:  cust_umur /Applications/MAMP/htdocs/nopi/system/application/controllers/c_customer.php 1209
+ERROR - 2013-10-16 11:33:25 --> Severity: Notice  --> Undefined index:  cust_creator /Applications/MAMP/htdocs/nopi/system/application/controllers/c_customer.php 1253
+ERROR - 2013-10-16 11:33:25 --> Severity: Notice  --> Undefined index:  cust_date_create /Applications/MAMP/htdocs/nopi/system/application/controllers/c_customer.php 1256
+ERROR - 2013-10-16 11:33:25 --> Severity: Notice  --> Undefined index:  cust_update /Applications/MAMP/htdocs/nopi/system/application/controllers/c_customer.php 1257
+ERROR - 2013-10-16 11:33:25 --> Severity: Notice  --> Undefined index:  cust_date_update /Applications/MAMP/htdocs/nopi/system/application/controllers/c_customer.php 1260
+ERROR - 2013-10-16 11:33:25 --> Severity: Notice  --> Undefined index:  cust_revised /Applications/MAMP/htdocs/nopi/system/application/controllers/c_customer.php 1261
+ERROR - 2013-10-16 11:33:25 --> Severity: Notice  --> Undefined index:  cust_tgldaftarend /Applications/MAMP/htdocs/nopi/system/application/controllers/c_customer.php 1273
+ERROR - 2013-10-16 11:33:25 --> Severity: Notice  --> Undefined index:  cust_tgldaftarend /Applications/MAMP/htdocs/nopi/system/application/controllers/c_customer.php 1274

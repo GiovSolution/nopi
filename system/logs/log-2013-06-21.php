@@ -1,0 +1,47 @@
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed'); ?>
+
+ERROR - 2013-06-21 14:49:49 --> Severity: Notice  --> Undefined index:  jproduk_nobukti_pajak D:\xampp\htdocs\nopi\system\application\controllers\c_master_jual_produk.php 403
+ERROR - 2013-06-21 14:50:28 --> Severity: Notice  --> Undefined index:  jproduk_nobukti_pajak D:\xampp\htdocs\nopi\system\application\controllers\c_master_jual_produk.php 403
+ERROR - 2013-06-21 14:50:54 --> Severity: Notice  --> Undefined index:  jproduk_nobukti_pajak D:\xampp\htdocs\nopi\system\application\controllers\c_master_jual_produk.php 403
+ERROR - 2013-06-21 14:51:11 --> Severity: Notice  --> Undefined index:  jproduk_nobukti_pajak D:\xampp\htdocs\nopi\system\application\controllers\c_master_jual_produk.php 403
+ERROR - 2013-06-21 14:54:56 --> Severity: Notice  --> Undefined index:  jproduk_nobukti_pajak D:\xampp\htdocs\nopi\system\application\controllers\c_master_jual_produk.php 403
+ERROR - 2013-06-21 15:02:22 --> Severity: Notice  --> Undefined index:  jproduk_nobukti_pajak D:\xampp\htdocs\nopi\system\application\controllers\c_master_jual_produk.php 403
+ERROR - 2013-06-21 15:04:16 --> Severity: Notice  --> Undefined index:  jproduk_nobukti_pajak D:\xampp\htdocs\nopi\system\application\controllers\c_master_jual_produk.php 403
+ERROR - 2013-06-21 15:04:38 --> Severity: Notice  --> Undefined index:  jproduk_nobukti_pajak D:\xampp\htdocs\nopi\system\application\controllers\c_master_jual_produk.php 403
+ERROR - 2013-06-21 15:05:37 --> Severity: Notice  --> Undefined index:  jproduk_nobukti_pajak D:\xampp\htdocs\nopi\system\application\controllers\c_master_jual_produk.php 403
+ERROR - 2013-06-21 15:06:12 --> Severity: Notice  --> Undefined index:  jproduk_nobukti_pajak D:\xampp\htdocs\nopi\system\application\controllers\c_master_jual_produk.php 403
+ERROR - 2013-06-21 15:06:56 --> Severity: Notice  --> Undefined index:  jproduk_nobukti_pajak D:\xampp\htdocs\nopi\system\application\controllers\c_master_jual_produk.php 403
+ERROR - 2013-06-21 15:25:48 --> Severity: Notice  --> Undefined index:  jproduk_nobukti_pajak D:\xampp\htdocs\nopi\system\application\controllers\c_master_jual_produk.php 403
+ERROR - 2013-06-21 15:26:32 --> Severity: Notice  --> Undefined index:  jproduk_nobukti_pajak D:\xampp\htdocs\nopi\system\application\controllers\c_master_jual_produk.php 403
+ERROR - 2013-06-21 15:27:30 --> Severity: Notice  --> Undefined index:  jproduk_nobukti_pajak D:\xampp\htdocs\nopi\system\application\controllers\c_master_jual_produk.php 403
+ERROR - 2013-06-21 15:28:04 --> Severity: Notice  --> Undefined index:  jproduk_nobukti_pajak D:\xampp\htdocs\nopi\system\application\controllers\c_master_jual_produk.php 403
+ERROR - 2013-06-21 15:29:24 --> Severity: Notice  --> Undefined index:  jproduk_nobukti_pajak D:\xampp\htdocs\nopi\system\application\controllers\c_master_jual_produk.php 403
+ERROR - 2013-06-21 15:30:21 --> Severity: Notice  --> Undefined index:  jproduk_nobukti_pajak D:\xampp\htdocs\nopi\system\application\controllers\c_master_jual_produk.php 403
+ERROR - 2013-06-21 15:31:20 --> Severity: Notice  --> Undefined index:  jproduk_nobukti_pajak D:\xampp\htdocs\nopi\system\application\controllers\c_master_jual_produk.php 403
+ERROR - 2013-06-21 15:33:18 --> Severity: Notice  --> Undefined index:  jproduk_nobukti_pajak D:\xampp\htdocs\nopi\system\application\controllers\c_master_jual_produk.php 403
+ERROR - 2013-06-21 15:33:36 --> Severity: Notice  --> Undefined index:  jproduk_nobukti_pajak D:\xampp\htdocs\nopi\system\application\controllers\c_master_jual_produk.php 403
+ERROR - 2013-06-21 15:56:37 --> Severity: Notice  --> Undefined index:  selected_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_lunas_hutang.php 157
+ERROR - 2013-06-21 15:56:37 --> Severity: Notice  --> Undefined property: stdClass::$dpiutang_master D:\xampp\htdocs\nopi\system\application\models\m_master_lunas_hutang.php 110
+ERROR - 2013-06-21 15:56:37 --> Severity: Notice  --> Undefined property: stdClass::$dpiutang_master D:\xampp\htdocs\nopi\system\application\models\m_master_lunas_hutang.php 110
+ERROR - 2013-06-21 15:56:37 --> Severity: Notice  --> Undefined property: stdClass::$dpiutang_master D:\xampp\htdocs\nopi\system\application\models\m_master_lunas_hutang.php 110
+ERROR - 2013-06-21 15:56:37 --> Severity: Notice  --> Undefined property: stdClass::$dpiutang_master D:\xampp\htdocs\nopi\system\application\models\m_master_lunas_hutang.php 110
+ERROR - 2013-06-21 15:56:37 --> Severity: Notice  --> Undefined property: stdClass::$dpiutang_master D:\xampp\htdocs\nopi\system\application\models\m_master_lunas_hutang.php 110
+ERROR - 2013-06-21 15:56:37 --> Severity: Notice  --> Undefined index:  selected_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_lunas_hutang.php 157
+ERROR - 2013-06-21 15:56:37 --> Severity: Notice  --> Undefined property: stdClass::$dpiutang_master D:\xampp\htdocs\nopi\system\application\models\m_master_lunas_hutang.php 110
+ERROR - 2013-06-21 15:56:37 --> Severity: Notice  --> Undefined property: stdClass::$dpiutang_master D:\xampp\htdocs\nopi\system\application\models\m_master_lunas_hutang.php 110
+ERROR - 2013-06-21 15:56:37 --> Severity: Notice  --> Undefined property: stdClass::$dpiutang_master D:\xampp\htdocs\nopi\system\application\models\m_master_lunas_hutang.php 110
+ERROR - 2013-06-21 15:56:37 --> Severity: Notice  --> Undefined property: stdClass::$dpiutang_master D:\xampp\htdocs\nopi\system\application\models\m_master_lunas_hutang.php 110
+ERROR - 2013-06-21 15:56:37 --> Severity: Notice  --> Undefined property: stdClass::$dpiutang_master D:\xampp\htdocs\nopi\system\application\models\m_master_lunas_hutang.php 110
+ERROR - 2013-06-21 15:57:20 --> Severity: Notice  --> Undefined index:  selected_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_lunas_hutang.php 157
+ERROR - 2013-06-21 16:17:15 --> Severity: Notice  --> Undefined index:  query D:\xampp\htdocs\nopi\system\application\controllers\c_laporan_komisi_sales.php 74
+ERROR - 2013-06-21 16:17:15 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_laporan_komisi_sales.php 77
+ERROR - 2013-06-21 16:17:15 --> Severity: Notice  --> Undefined index:  jenis D:\xampp\htdocs\nopi\system\application\controllers\c_laporan_komisi_sales.php 80
+ERROR - 2013-06-21 16:17:15 --> Query error: 
+ERROR - 2013-06-21 16:17:44 --> Severity: Notice  --> Undefined index:  start D:\xampp\htdocs\nopi\system\application\controllers\c_laporan_komisi_sales.php 89
+ERROR - 2013-06-21 16:17:44 --> Severity: Notice  --> Undefined index:  limit D:\xampp\htdocs\nopi\system\application\controllers\c_laporan_komisi_sales.php 90
+ERROR - 2013-06-21 16:17:44 --> Severity: Notice  --> Undefined variable: produk_nama D:\xampp\htdocs\nopi\system\application\views\main\p_laporan_komisi.php 17
+ERROR - 2013-06-21 16:17:44 --> Severity: Notice  --> Undefined variable: gudang_nama D:\xampp\htdocs\nopi\system\application\views\main\p_laporan_komisi.php 17
+ERROR - 2013-06-21 16:17:44 --> Severity: Notice  --> Undefined variable: periode D:\xampp\htdocs\nopi\system\application\views\main\p_laporan_komisi.php 17
+ERROR - 2013-06-21 16:17:44 --> Severity: Notice  --> Undefined variable: produk_nama D:\xampp\htdocs\nopi\system\application\views\main\p_laporan_komisi.php 22
+ERROR - 2013-06-21 16:17:44 --> Severity: Notice  --> Undefined variable: gudang_nama D:\xampp\htdocs\nopi\system\application\views\main\p_laporan_komisi.php 22
+ERROR - 2013-06-21 16:17:44 --> Severity: Notice  --> Undefined variable: periode D:\xampp\htdocs\nopi\system\application\views\main\p_laporan_komisi.php 22

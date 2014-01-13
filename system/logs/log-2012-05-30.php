@@ -1,0 +1,190 @@
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed'); ?>
+
+ERROR - 2012-05-30 14:25:11 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 147
+ERROR - 2012-05-30 14:25:11 --> Severity: Notice  --> Undefined index:  selected_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 149
+ERROR - 2012-05-30 14:25:11 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 14:25:15 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 14:25:15 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 14:25:54 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 14:25:54 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 14:25:54 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 14:25:54 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 14:26:01 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 14:26:01 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 14:26:01 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 14:26:01 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 14:26:32 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 14:26:32 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 14:30:32 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 14:30:56 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 14:30:56 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 14:30:56 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 14:30:56 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 14:31:03 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 14:31:03 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 14:31:03 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 14:31:03 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 14:31:54 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 14:31:56 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 14:31:58 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 14:32:05 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 14:32:19 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 14:32:20 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 14:32:23 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 14:32:33 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 14:39:28 --> Severity: Notice  --> Undefined index:  selected_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 194
+ERROR - 2012-05-30 14:39:28 --> Severity: Notice  --> Undefined index:  selected_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 149
+ERROR - 2012-05-30 14:39:28 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 15:01:21 --> Query error: 
+ERROR - 2012-05-30 15:02:03 --> Query error: 
+ERROR - 2012-05-30 15:08:17 --> Severity: Notice  --> Undefined index:  query D:\xampp\htdocs\nopi\system\application\controllers\c_stok_mutasi.php 78
+ERROR - 2012-05-30 15:08:22 --> Severity: Notice  --> Undefined index:  query D:\xampp\htdocs\nopi\system\application\controllers\c_stok_mutasi.php 78
+ERROR - 2012-05-30 15:08:24 --> Severity: Notice  --> Undefined index:  query D:\xampp\htdocs\nopi\system\application\controllers\c_stok_mutasi.php 78
+ERROR - 2012-05-30 15:08:26 --> Severity: Notice  --> Undefined index:  query D:\xampp\htdocs\nopi\system\application\controllers\c_stok_mutasi.php 78
+ERROR - 2012-05-30 15:08:27 --> Severity: Notice  --> Undefined index:  query D:\xampp\htdocs\nopi\system\application\controllers\c_stok_mutasi.php 78
+ERROR - 2012-05-30 15:08:28 --> Severity: Notice  --> Undefined index:  query D:\xampp\htdocs\nopi\system\application\controllers\c_stok_mutasi.php 78
+ERROR - 2012-05-30 15:08:29 --> Severity: Notice  --> Undefined index:  query D:\xampp\htdocs\nopi\system\application\controllers\c_stok_mutasi.php 78
+ERROR - 2012-05-30 15:08:30 --> Severity: Notice  --> Undefined index:  query D:\xampp\htdocs\nopi\system\application\controllers\c_stok_mutasi.php 78
+ERROR - 2012-05-30 15:20:09 --> Severity: Notice  --> Undefined index:  query D:\xampp\htdocs\nopi\system\application\controllers\c_stok_mutasi.php 78
+ERROR - 2012-05-30 15:22:18 --> Severity: Notice  --> Undefined index:  satuan D:\xampp\htdocs\nopi\system\application\controllers\c_hpp.php 33
+ERROR - 2012-05-30 15:24:54 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 147
+ERROR - 2012-05-30 15:24:54 --> Severity: Notice  --> Undefined index:  selected_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 149
+ERROR - 2012-05-30 15:24:54 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 15:24:57 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:24:57 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:25:24 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 15:25:24 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:25:24 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 15:25:24 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:25:29 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 15:25:31 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:25:31 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:25:49 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 15:25:49 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:25:49 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 15:25:49 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:25:56 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 15:25:57 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:25:57 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:26:26 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 15:26:26 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:26:26 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 15:26:26 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:27:23 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 15:27:23 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 15:27:24 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:27:24 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:27:31 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:27:35 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:27:55 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 15:27:55 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 15:27:55 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:27:55 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:28:23 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 15:28:23 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:28:23 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 15:28:23 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:28:26 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:28:27 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 15:28:27 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 15:28:27 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:28:27 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:28:30 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:28:40 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 15:28:40 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:28:40 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 15:28:40 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:29:16 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 15:29:17 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:29:17 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:29:26 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 15:29:27 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:29:28 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:30:01 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 15:30:01 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:30:01 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 15:30:01 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:30:10 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 15:30:10 --> Query error: 
+ERROR - 2012-05-30 15:30:10 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:30:10 --> Query error: 
+ERROR - 2012-05-30 15:30:10 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:30:10 --> Query error: 
+ERROR - 2012-05-30 15:30:10 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 15:30:10 --> Query error: 
+ERROR - 2012-05-30 15:30:17 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 15:30:17 --> Query error: 
+ERROR - 2012-05-30 15:30:17 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:30:17 --> Query error: 
+ERROR - 2012-05-30 15:30:17 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 15:30:17 --> Query error: 
+ERROR - 2012-05-30 15:30:17 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 15:30:17 --> Query error: 
+ERROR - 2012-05-30 15:30:17 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:30:17 --> Query error: 
+ERROR - 2012-05-30 15:30:17 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 15:30:17 --> Query error: 
+ERROR - 2012-05-30 15:30:17 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:30:17 --> Query error: 
+ERROR - 2012-05-30 15:30:17 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:30:17 --> Query error: 
+ERROR - 2012-05-30 15:30:17 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:30:17 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 15:30:17 --> Query error: 
+ERROR - 2012-05-30 15:30:24 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 15:30:24 --> Query error: 
+ERROR - 2012-05-30 15:31:33 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 147
+ERROR - 2012-05-30 15:31:33 --> Severity: Notice  --> Undefined index:  selected_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 149
+ERROR - 2012-05-30 15:31:33 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 15:31:35 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:31:35 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:31:55 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 15:31:55 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:31:55 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 15:31:55 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:32:12 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:32:12 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:32:25 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 15:32:25 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 15:32:25 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:32:25 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:32:36 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 15:32:37 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:32:37 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:33:18 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 15:33:18 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:33:18 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 15:33:18 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:33:31 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 15:33:32 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:33:32 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:34:03 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 15:34:03 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:34:03 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 15:34:03 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:35:51 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 15:35:51 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:35:51 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:35:51 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 15:35:57 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 15:35:57 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:35:57 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 15:35:57 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:36:21 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 15:36:24 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:36:24 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:36:32 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 15:36:32 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:36:32 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 15:36:32 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:36:40 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 15:36:42 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:36:43 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:36:43 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 15:36:43 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 15:36:43 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:36:43 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:36:48 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150
+ERROR - 2012-05-30 15:36:48 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:36:48 --> Severity: Notice  --> Undefined index:  master_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 195
+ERROR - 2012-05-30 15:36:48 --> Severity: Notice  --> Undefined index:  supplier_id D:\xampp\htdocs\nopi\system\application\controllers\c_master_order_beli.php 150

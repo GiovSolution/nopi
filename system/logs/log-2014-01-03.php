@@ -1,0 +1,30 @@
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed'); ?>
+
+ERROR - 2014-01-03 11:21:01 --> Severity: Notice  --> Undefined index:  satuan /Applications/MAMP/htdocs/nopi/system/application/controllers/c_hpp.php 33
+ERROR - 2014-01-03 11:21:09 --> Severity: Notice  --> Undefined index:  query /Applications/MAMP/htdocs/nopi/system/application/controllers/c_kartu_stok.php 53
+ERROR - 2014-01-03 11:21:09 --> Severity: Notice  --> Undefined index:  start /Applications/MAMP/htdocs/nopi/system/application/controllers/c_kartu_stok.php 54
+ERROR - 2014-01-03 11:21:09 --> Severity: Notice  --> Undefined index:  limit /Applications/MAMP/htdocs/nopi/system/application/controllers/c_kartu_stok.php 55
+ERROR - 2014-01-03 11:21:09 --> Severity: Notice  --> Undefined index:  query /Applications/MAMP/htdocs/nopi/system/application/controllers/c_kartu_stok.php 96
+ERROR - 2014-01-03 11:21:09 --> Severity: Notice  --> Undefined index:  start /Applications/MAMP/htdocs/nopi/system/application/controllers/c_kartu_stok.php 97
+ERROR - 2014-01-03 11:21:09 --> Severity: Notice  --> Undefined index:  limit /Applications/MAMP/htdocs/nopi/system/application/controllers/c_kartu_stok.php 98
+ERROR - 2014-01-03 11:21:35 --> Severity: Notice  --> Undefined index:  query /Applications/MAMP/htdocs/nopi/system/application/controllers/c_kartu_stok.php 53
+ERROR - 2014-01-03 11:21:35 --> Severity: Notice  --> Undefined index:  start /Applications/MAMP/htdocs/nopi/system/application/controllers/c_kartu_stok.php 54
+ERROR - 2014-01-03 11:21:35 --> Severity: Notice  --> Undefined index:  limit /Applications/MAMP/htdocs/nopi/system/application/controllers/c_kartu_stok.php 55
+ERROR - 2014-01-03 11:21:36 --> Severity: Notice  --> Undefined index:  query /Applications/MAMP/htdocs/nopi/system/application/controllers/c_kartu_stok.php 96
+ERROR - 2014-01-03 11:21:36 --> Severity: Notice  --> Undefined index:  start /Applications/MAMP/htdocs/nopi/system/application/controllers/c_kartu_stok.php 97
+ERROR - 2014-01-03 11:21:36 --> Severity: Notice  --> Undefined index:  limit /Applications/MAMP/htdocs/nopi/system/application/controllers/c_kartu_stok.php 98
+ERROR - 2014-01-03 12:04:08 --> Severity: Notice  --> Undefined index:  query /Applications/MAMP/htdocs/nopi/system/application/controllers/c_kartu_stok.php 53
+ERROR - 2014-01-03 12:04:08 --> Severity: Notice  --> Undefined index:  start /Applications/MAMP/htdocs/nopi/system/application/controllers/c_kartu_stok.php 54
+ERROR - 2014-01-03 12:04:08 --> Severity: Notice  --> Undefined index:  limit /Applications/MAMP/htdocs/nopi/system/application/controllers/c_kartu_stok.php 55
+ERROR - 2014-01-03 12:04:08 --> Severity: Notice  --> Undefined index:  query /Applications/MAMP/htdocs/nopi/system/application/controllers/c_kartu_stok.php 96
+ERROR - 2014-01-03 12:04:08 --> Severity: Notice  --> Undefined index:  start /Applications/MAMP/htdocs/nopi/system/application/controllers/c_kartu_stok.php 97
+ERROR - 2014-01-03 12:04:08 --> Severity: Notice  --> Undefined index:  limit /Applications/MAMP/htdocs/nopi/system/application/controllers/c_kartu_stok.php 98
+ERROR - 2014-01-03 15:41:22 --> Severity: Notice  --> Undefined index:  cust_id /Applications/MAMP/htdocs/nopi/system/application/controllers/c_customer.php 1495
+ERROR - 2014-01-03 15:41:22 --> Severity: Notice  --> Undefined index:  cust_umur /Applications/MAMP/htdocs/nopi/system/application/controllers/c_customer.php 1562
+ERROR - 2014-01-03 15:41:22 --> Severity: Notice  --> Undefined index:  cust_creator /Applications/MAMP/htdocs/nopi/system/application/controllers/c_customer.php 1606
+ERROR - 2014-01-03 15:41:22 --> Severity: Notice  --> Undefined index:  cust_date_create /Applications/MAMP/htdocs/nopi/system/application/controllers/c_customer.php 1609
+ERROR - 2014-01-03 15:41:22 --> Severity: Notice  --> Undefined index:  cust_update /Applications/MAMP/htdocs/nopi/system/application/controllers/c_customer.php 1610
+ERROR - 2014-01-03 15:41:22 --> Severity: Notice  --> Undefined index:  cust_date_update /Applications/MAMP/htdocs/nopi/system/application/controllers/c_customer.php 1613
+ERROR - 2014-01-03 15:41:22 --> Severity: Notice  --> Undefined index:  cust_revised /Applications/MAMP/htdocs/nopi/system/application/controllers/c_customer.php 1614
+ERROR - 2014-01-03 15:41:22 --> Severity: Notice  --> Undefined index:  cust_tgldaftarend /Applications/MAMP/htdocs/nopi/system/application/controllers/c_customer.php 1626
+ERROR - 2014-01-03 15:41:22 --> Severity: Notice  --> Undefined index:  cust_tgldaftarend /Applications/MAMP/htdocs/nopi/system/application/controllers/c_customer.php 1627
