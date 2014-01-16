@@ -258,15 +258,23 @@ class M_produk extends Model{
 		//function for get list record
 		function produk_list($filter,$start,$end){
 			//$query = "SELECT * FROM produk,produk_group,kategori,satuan,jenis,kategori2 WHERE produk_group=group_id AND produk_kategori=kategori_id AND produk_satuan=satuan_id AND produk_jenis=jenis_id AND produk_kontribusi=kategori2_id";
-			$query="select * from vu_produk where produk_aktif = 'Aktif'";
+			// $query="select * from vu_produk where produk_aktif = 'Aktif'";
+			$query="SELECT `produk`.`produk_id` AS `produk_id`,`produk`.`produk_kode` AS `produk_kode`,`produk`.`produk_group` AS `produk_group`,`produk`.`produk_kategori` AS `produk_kategori`,`produk`.`produk_kontribusi` AS `produk_kontribusi`,`produk`.`produk_racikan` AS `produk_racikan`,`produk`.`produk_keterangan_resep` AS `produk_keterangan_resep`,`produk`.`produk_nama` AS `produk_nama`,`produk`.`produk_satuan` AS `produk_satuan`,`satuan`.`satuan_nama` AS `satuan_nama`,`produk`.`produk_du` AS `produk_du`,`produk`.`produk_dm` AS `produk_dm`,`produk`.`produk_point` AS `produk_point`,`produk`.`produk_kredit` AS `produk_kredit`,`produk`.`produk_harga` AS `produk_harga`,`produk`.`produk_volume` AS `produk_volume`,`produk`.`produk_jenis` AS `produk_jenis`,`produk`.`produk_kodelama` AS `produk_kodelama`,`produk`.`produk_keterangan` AS `produk_keterangan`,`produk`.`produk_aktif` AS `produk_aktif`,`produk`.`produk_creator` AS `produk_creator`,`produk`.`produk_date_create` AS `produk_date_create`,`produk`.`produk_update` AS `produk_update`,`produk`.`produk_date_update` AS `produk_date_update`,`produk`.`produk_revised` AS `produk_revised`,
+				`kategori`.`kategori_id` AS `kategori_id`,`kategori`.`kategori_nama` AS `kategori_nama`,`kategori`.`kategori_jenis` AS `kategori_jenis`,`kategori`.`kategori_akun` AS `kategori_akun`,
+				`produk`.`produk_saldo_awal` AS `produk_saldo_awal`,`produk`.`produk_nilai_saldo_awal` AS `produk_nilai_saldo_awal`,`produk`.`produk_tgl_nilai_saldo_awal` AS `produk_tgl_nilai_saldo_awal`,`produk`.`produk_aktif_cabang` AS `produk_aktif_cabang`,`merek`.`merek_nama` AS `merek_nama`,`produk`.`produk_kategori2` AS `kategori2`,`produk`.`produk_isicolly` AS `produk_isicolly`,`satuan`.`satuan_id` AS `satuan_id` 
+				FROM `produk` 
+				LEFT JOIN `kategori` on(`produk`.`produk_kategori` = `kategori`.`kategori_id`)
+				LEFT JOIN `satuan` on(`produk`.`produk_satuan` = `satuan`.`satuan_id`)
+				LEFT JOIN `merek` on(`produk`.`produk_merk` = `merek`.`merek_id`)
+				WHERE produk_aktif = 'Aktif'";
 			
 			// For simple search
 			if ($filter<>""){
 				$query .=eregi("WHERE",$query)? " AND ":" WHERE ";
-				$query .= " (produk_kode LIKE '%".addslashes($filter)."%' OR group_nama LIKE '%".addslashes($filter)."%' OR jenis_nama LIKE '%".addslashes($filter)."%' OR kategori_nama LIKE '%".addslashes($filter)."%' OR produk_nama LIKE '%".addslashes($filter)."%' )";
+				$query .= " (produk_kode LIKE '%".addslashes($filter)."%' OR group_nama LIKE '%".addslashes($filter)."%' OR merek_nama LIKE '%".addslashes($filter)."%' OR kategori_nama LIKE '%".addslashes($filter)."%' OR produk_nama LIKE '%".addslashes($filter)."%' )";
 				$query .= " AND produk_aktif = 'Aktif'"; // by hendri, simple search khusus aktif only
 			}
-			$query.=" ORDER BY produk_id DESC";
+			$query.=" ORDER BY kategori_nama ASC";
 			$result = $this->db->query($query);
 			$nbrows = $result->num_rows();
 			$limit = $query." LIMIT ".$start.",".$end;		

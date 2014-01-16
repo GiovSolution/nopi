@@ -1014,8 +1014,8 @@ Ext.onReady(function(){
 			{name: 'produk_harga_corp', type: 'float', mapping: 'produk_harga_corp'},
 			{name: 'produk_harga_btm', type: 'float', mapping: 'produk_harga_btm'},
 			{name: 'produk_harga_jkt', type: 'float', mapping: 'produk_harga_jkt'}
-		]),
-		sortInfo:{field: 'produk_id', direction: "DESC"}
+		])
+		// sortInfo:{field: 'produk_id', direction: "DESC"}
 	});
 	/* End of Function */
 	
