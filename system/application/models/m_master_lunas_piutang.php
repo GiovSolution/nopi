@@ -508,9 +508,8 @@ class M_master_lunas_piutang extends Model{
 					"dpiutang_keterangan"=>$dpiutang_keterangan,
 					"dpiutang_id_faktur_lp"=>$fpiutang_id
 				);
-				//$this->db->query('LOCK TABLE detail_lunas_piutang WRITE');
 				$this->db->insert('detail_lunas_piutang', $dti);
-				//$this->db->query('UNLOCK TABLES');
+
 			}else{
 				//proses edit detail
 				$dtu = array(
@@ -521,10 +520,10 @@ class M_master_lunas_piutang extends Model{
 					"dpiutang_keterangan"=>$dpiutang_keterangan,
 					"dpiutang_id_faktur_lp"=>$fpiutang_id
 				);
-				// $this->db->query('LOCK TABLE detail_lunas_piutang WRITE');
+
 				$this->db->where('dpiutang_id', $dpiutang_id);
 				$this->db->update('detail_lunas_piutang', $dtu);
-				//$this->db->query('UNLOCK TABLES');
+
 			}
 			if($cetak_lp==1 && $i==$size_array){
 				/*update db.master_lunas_piutang.lpiutang_sisa*/
@@ -535,16 +534,15 @@ class M_master_lunas_piutang extends Model{
 						$sqlu = "UPDATE master_lunas_piutang
 							SET lpiutang_sisa = (lpiutang_total-".$row->total_pelunasan.")
 							WHERE lpiutang_id=".$row->dpiutang_master;
-						// $this->db->query('LOCK TABLE master_lunas_piutang WRITE');
+
 						$this->db->query($sqlu);
-						// $this->db->query('UNLOCK TABLES');
 						
 						$sqlu_status = "UPDATE master_lunas_piutang
 							SET lpiutang_status = 'lunas', lpiutang_stat_dok = 'Tertutup'
 							WHERE lpiutang_sisa=0 AND lpiutang_id=".$row->dpiutang_master;
-						// $this->db->query('LOCK TABLE master_lunas_piutang WRITE');
+
 						$this->db->query($sqlu_status);
-						// $this->db->query('UNLOCK TABLES');
+
 					}
 				}
 				/*proses cetak*/
@@ -567,16 +565,13 @@ class M_master_lunas_piutang extends Model{
 						$sqlu = "UPDATE master_lunas_piutang
 							SET lpiutang_sisa = (lpiutang_total-".$row->total_pelunasan.")
 							WHERE lpiutang_id=".$row->dpiutang_master;
-						// $this->db->query('LOCK TABLE master_lunas_piutang WRITE');
 						$this->db->query($sqlu);
-						// $this->db->query('UNLOCK TABLES');
-						
+	
 						$sqlu_status = "UPDATE master_lunas_piutang
 							SET lpiutang_status = 'lunas', lpiutang_stat_dok = 'Tertutup'
 							WHERE lpiutang_sisa=0 AND lpiutang_id=".$row->dpiutang_master;
-						// $this->db->query('LOCK TABLE master_lunas_piutang WRITE');
 						$this->db->query($sqlu_status);
-						// $this->db->query('UNLOCK TABLES');
+
 					}
 				}
 				return 0;
