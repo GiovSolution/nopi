@@ -271,7 +271,7 @@ class M_produk extends Model{
 			// For simple search
 			if ($filter<>""){
 				$query .=eregi("WHERE",$query)? " AND ":" WHERE ";
-				$query .= " (produk_kode LIKE '%".addslashes($filter)."%' OR group_nama LIKE '%".addslashes($filter)."%' OR merek_nama LIKE '%".addslashes($filter)."%' OR kategori_nama LIKE '%".addslashes($filter)."%' OR produk_nama LIKE '%".addslashes($filter)."%' )";
+				$query .= " (produk_kode LIKE '%".addslashes($filter)."%' OR merek_nama LIKE '%".addslashes($filter)."%' OR kategori_nama LIKE '%".addslashes($filter)."%' OR produk_nama LIKE '%".addslashes($filter)."%' )";
 				$query .= " AND produk_aktif = 'Aktif'"; // by hendri, simple search khusus aktif only
 			}
 			$query.=" ORDER BY kategori_nama ASC";
