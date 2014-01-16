@@ -82,6 +82,7 @@ on master_retur_jual_produk.rproduk_id = detail_retur_jual_produk.drproduk_maste
 where
 master_retur_jual_produk.rproduk_stat_dok = 'Tertutup'
 and master_retur_jual_produk.rproduk_cust=master_lunas_piutang.lpiutang_cust
+and master_retur_jual_produk.rproduk_tanggal >= '2014-01-01'
 group by master_retur_jual_produk.rproduk_cust),0)
 )
 ) as lpiutang_sisa
