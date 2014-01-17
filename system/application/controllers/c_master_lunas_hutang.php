@@ -271,36 +271,36 @@ class C_master_lunas_hutang extends Controller {
 		//POST varible here
 		//auto increment, don't accept anything from form values
 		$fhutang_id=trim(@$_POST["fhutang_id"]);
-		$fpiutang_no=trim(@$_POST["fpiutang_no"]);
-		$fpiutang_no=str_replace("/(<\/?)(p)([^>]*>)", "",$fpiutang_no);
-		$fpiutang_no=str_replace("'", '"',$fpiutang_no);
-		$fpiutang_cust=trim(@$_POST["fpiutang_cust"]);
-		$fpiutang_tanggal=trim(@$_POST["fpiutang_tanggal"]);
-		$fpiutang_keterangan=trim(@$_POST["fpiutang_keterangan"]);
-		$fpiutang_keterangan=str_replace("/(<\/?)(p)([^>]*>)", "",$fpiutang_keterangan);
-		$fpiutang_keterangan=str_replace("'", '"',$fpiutang_keterangan);
-		$fpiutang_status=trim(@$_POST["fpiutang_status"]);
-		$fpiutang_status=str_replace("/(<\/?)(p)([^>]*>)", "",$fpiutang_status);
-		$fpiutang_status=str_replace("'", '"',$fpiutang_status);
-		$fpiutang_cara=trim(@$_POST["fpiutang_cara"]);
-		$fpiutang_cara=str_replace("/(<\/?)(p)([^>]*>)", "",$fpiutang_cara);
-		$fpiutang_cara=str_replace("'", '"',$fpiutang_cara);
-		$fpiutang_bayar=trim(@$_POST["fpiutang_bayar"]);
+		$fhutang_no=trim(@$_POST["fhutang_no"]);
+		$fhutang_no=str_replace("/(<\/?)(p)([^>]*>)", "",$fhutang_no);
+		$fhutang_no=str_replace("'", '"',$fhutang_no);
+		$fhutang_cust=trim(@$_POST["fhutang_cust"]);
+		$fhutang_tanggal=trim(@$_POST["fhutang_tanggal"]);
+		$fhutang_keterangan=trim(@$_POST["fhutang_keterangan"]);
+		$fhutang_keterangan=str_replace("/(<\/?)(p)([^>]*>)", "",$fhutang_keterangan);
+		$fhutang_keterangan=str_replace("'", '"',$fhutang_keterangan);
+		$fhutang_status=trim(@$_POST["fhutang_status"]);
+		$fhutang_status=str_replace("/(<\/?)(p)([^>]*>)", "",$fhutang_status);
+		$fhutang_status=str_replace("'", '"',$fhutang_status);
+		$fhutang_cara=trim(@$_POST["fhutang_cara"]);
+		$fhutang_cara=str_replace("/(<\/?)(p)([^>]*>)", "",$fhutang_cara);
+		$fhutang_cara=str_replace("'", '"',$fhutang_cara);
+		$fhutang_bayar=trim(@$_POST["fhutang_bayar"]);
 		
 		//kwitansi
-		$fpiutang_kwitansi_no=trim($_POST["fpiutang_kwitansi_no"]);
-		$fpiutang_kwitansi_nama=trim(@$_POST["fpiutang_kwitansi_nama"]);
-		$fpiutang_kwitansi_nama=str_replace("/(<\/?)(p)([^>]*>)", "",$fpiutang_kwitansi_nama);
-		$fpiutang_kwitansi_nama=str_replace("'", '"',$fpiutang_kwitansi_nama);
+		$fhutang_kwitansi_no=trim($_POST["fhutang_kwitansi_no"]);
+		$fhutang_kwitansi_nama=trim(@$_POST["fhutang_kwitansi_nama"]);
+		$fhutang_kwitansi_nama=str_replace("/(<\/?)(p)([^>]*>)", "",$fhutang_kwitansi_nama);
+		$fhutang_kwitansi_nama=str_replace("'", '"',$fhutang_kwitansi_nama);
 		//card
-		$fpiutang_card_nama=trim($_POST["fpiutang_card_nama"]);
-		$fpiutang_card_edc=trim($_POST["fpiutang_card_edc"]);
-		$fpiutang_card_no=trim($_POST["fpiutang_card_no"]);
+		$fhutang_card_nama=trim($_POST["fhutang_card_nama"]);
+		$fhutang_card_edc=trim($_POST["fhutang_card_edc"]);
+		$fhutang_card_no=trim($_POST["fhutang_card_no"]);
 		//cek
-		$fpiutang_cek_nama=trim($_POST["fpiutang_cek_nama"]);
-		$fpiutang_cek_no=trim($_POST["fpiutang_cek_no"]);
-		$fpiutang_cek_valid=trim($_POST["fpiutang_cek_valid"]);
-		$fpiutang_cek_bank=trim($_POST["fpiutang_cek_bank"]);
+		$fhutang_cek_nama=trim($_POST["fhutang_cek_nama"]);
+		$fhutang_cek_no=trim($_POST["fhutang_cek_no"]);
+		$fhutang_cek_valid=trim($_POST["fhutang_cek_valid"]);
+		$fhutang_cek_bank=trim($_POST["fhutang_cek_bank"]);
 		//transfer
 		$fpiutang_transfer_bank=trim($_POST["fpiutang_transfer_bank"]);
 		$fpiutang_transfer_nama=trim($_POST["fpiutang_transfer_nama"]);
@@ -319,11 +319,11 @@ class C_master_lunas_hutang extends Controller {
 		$array_dpiutang_keterangan = json_decode(stripslashes($dhutang_keterangan));
 		
 		$cetak_lp = trim(@$_POST["cetak_lp"]);
-		$result = $this->m_master_lunas_hutang->master_lunas_hutang_update($fhutang_id ,$fpiutang_no ,$fpiutang_cust ,$fpiutang_tanggal, $fpiutang_keterangan ,$fpiutang_status
-										,$fpiutang_cara ,$fpiutang_bayar
-										,$fpiutang_kwitansi_no ,$fpiutang_kwitansi_nama
-										,$fpiutang_card_nama ,$fpiutang_card_edc ,$fpiutang_card_no
-										,$fpiutang_cek_nama ,$fpiutang_cek_no ,$fpiutang_cek_valid ,$fpiutang_cek_bank
+		$result = $this->m_master_lunas_hutang->master_lunas_hutang_update($fhutang_id ,$fhutang_no ,$fhutang_cust ,$fhutang_tanggal, $fhutang_keterangan ,$fhutang_status
+										,$fhutang_cara ,$fhutang_bayar
+										,$fhutang_kwitansi_no ,$fhutang_kwitansi_nama
+										,$fhutang_card_nama ,$fhutang_card_edc ,$fhutang_card_no
+										,$fhutang_cek_nama ,$fhutang_cek_no ,$fhutang_cek_valid ,$fhutang_cek_bank
 										,$fpiutang_transfer_bank ,$fpiutang_transfer_nama
 										,$array_dpiutang_id ,$array_lpiutang_id ,$array_dpiutang_nilai ,$array_dpiutang_keterangan
 										,$cetak_lp);
@@ -334,36 +334,36 @@ class C_master_lunas_hutang extends Controller {
 	function master_lunas_hutang_create(){
 		//POST varible here
 		//auto increment, don't accept anything from form values
-		$fpiutang_no=trim(@$_POST["fpiutang_no"]);
-		$fpiutang_no=str_replace("/(<\/?)(p)([^>]*>)", "",$fpiutang_no);
-		$fpiutang_no=str_replace("'", '"',$fpiutang_no);
-		$fpiutang_cust=trim(@$_POST["fpiutang_cust"]);
-		$fpiutang_tanggal=trim(@$_POST["fpiutang_tanggal"]);
-		$fpiutang_keterangan=trim(@$_POST["fpiutang_keterangan"]);
-		$fpiutang_keterangan=str_replace("/(<\/?)(p)([^>]*>)", "",$fpiutang_keterangan);
-		$fpiutang_keterangan=str_replace("'", '"',$fpiutang_keterangan);
-		$fpiutang_status=trim(@$_POST["fpiutang_status"]);
-		$fpiutang_status=str_replace("/(<\/?)(p)([^>]*>)", "",$fpiutang_status);
-		$fpiutang_status=str_replace("'", '"',$fpiutang_status);
-		$fpiutang_cara=trim(@$_POST["fpiutang_cara"]);
-		$fpiutang_cara=str_replace("/(<\/?)(p)([^>]*>)", "",$fpiutang_cara);
-		$fpiutang_cara=str_replace("'", '"',$fpiutang_cara);
-		$fpiutang_bayar=trim(@$_POST["fpiutang_bayar"]);
+		$fhutang_no=trim(@$_POST["fhutang_no"]);
+		$fhutang_no=str_replace("/(<\/?)(p)([^>]*>)", "",$fhutang_no);
+		$fhutang_no=str_replace("'", '"',$fhutang_no);
+		$fhutang_cust=trim(@$_POST["fhutang_cust"]);
+		$fhutang_tanggal=trim(@$_POST["fhutang_tanggal"]);
+		$fhutang_keterangan=trim(@$_POST["fhutang_keterangan"]);
+		$fhutang_keterangan=str_replace("/(<\/?)(p)([^>]*>)", "",$fhutang_keterangan);
+		$fhutang_keterangan=str_replace("'", '"',$fhutang_keterangan);
+		$fhutang_status=trim(@$_POST["fhutang_status"]);
+		$fhutang_status=str_replace("/(<\/?)(p)([^>]*>)", "",$fhutang_status);
+		$fhutang_status=str_replace("'", '"',$fhutang_status);
+		$fhutang_cara=trim(@$_POST["fhutang_cara"]);
+		$fhutang_cara=str_replace("/(<\/?)(p)([^>]*>)", "",$fhutang_cara);
+		$fhutang_cara=str_replace("'", '"',$fhutang_cara);
+		$fhutang_bayar=trim(@$_POST["fhutang_bayar"]);
 		
 		//kwitansi
-		$fpiutang_kwitansi_no=trim($_POST["fpiutang_kwitansi_no"]);
-		$fpiutang_kwitansi_nama=trim(@$_POST["fpiutang_kwitansi_nama"]);
-		$fpiutang_kwitansi_nama=str_replace("/(<\/?)(p)([^>]*>)", "",$fpiutang_kwitansi_nama);
-		$fpiutang_kwitansi_nama=str_replace("'", '"',$fpiutang_kwitansi_nama);
+		$fhutang_kwitansi_no=trim($_POST["fhutang_kwitansi_no"]);
+		$fhutang_kwitansi_nama=trim(@$_POST["fhutang_kwitansi_nama"]);
+		$fhutang_kwitansi_nama=str_replace("/(<\/?)(p)([^>]*>)", "",$fhutang_kwitansi_nama);
+		$fhutang_kwitansi_nama=str_replace("'", '"',$fhutang_kwitansi_nama);
 		//card
-		$fpiutang_card_nama=trim($_POST["fpiutang_card_nama"]);
-		$fpiutang_card_edc=trim($_POST["fpiutang_card_edc"]);
-		$fpiutang_card_no=trim($_POST["fpiutang_card_no"]);
+		$fhutang_card_nama=trim($_POST["fhutang_card_nama"]);
+		$fhutang_card_edc=trim($_POST["fhutang_card_edc"]);
+		$fhutang_card_no=trim($_POST["fhutang_card_no"]);
 		//cek
-		$fpiutang_cek_nama=trim($_POST["fpiutang_cek_nama"]);
-		$fpiutang_cek_no=trim($_POST["fpiutang_cek_no"]);
-		$fpiutang_cek_valid=trim($_POST["fpiutang_cek_valid"]);
-		$fpiutang_cek_bank=trim($_POST["fpiutang_cek_bank"]);
+		$fhutang_cek_nama=trim($_POST["fhutang_cek_nama"]);
+		$fhutang_cek_no=trim($_POST["fhutang_cek_no"]);
+		$fhutang_cek_valid=trim($_POST["fhutang_cek_valid"]);
+		$fhutang_cek_bank=trim($_POST["fhutang_cek_bank"]);
 		//transfer
 		$fpiutang_transfer_bank=trim($_POST["fpiutang_transfer_bank"]);
 		$fpiutang_transfer_nama=trim($_POST["fpiutang_transfer_nama"]);
@@ -382,11 +382,11 @@ class C_master_lunas_hutang extends Controller {
 		$array_dpiutang_keterangan = json_decode(stripslashes($dhutang_keterangan));
 		
 		$cetak_lp = trim(@$_POST["cetak_lp"]);
-		$result=$this->m_master_lunas_hutang->master_lunas_hutang_create($fpiutang_cust ,$fpiutang_tanggal, $fpiutang_keterangan ,$fpiutang_status
-										,$fpiutang_cara ,$fpiutang_bayar
-										,$fpiutang_kwitansi_no ,$fpiutang_kwitansi_nama
-										,$fpiutang_card_nama ,$fpiutang_card_edc ,$fpiutang_card_no
-										,$fpiutang_cek_nama ,$fpiutang_cek_no ,$fpiutang_cek_valid ,$fpiutang_cek_bank
+		$result=$this->m_master_lunas_hutang->master_lunas_hutang_create($fhutang_cust ,$fhutang_tanggal, $fhutang_keterangan ,$fhutang_status
+										,$fhutang_cara ,$fhutang_bayar
+										,$fhutang_kwitansi_no ,$fhutang_kwitansi_nama
+										,$fhutang_card_nama ,$fhutang_card_edc ,$fhutang_card_no
+										,$fhutang_cek_nama ,$fhutang_cek_no ,$fhutang_cek_valid ,$fhutang_cek_bank
 										,$fpiutang_transfer_bank ,$fpiutang_transfer_nama
 										,$array_dpiutang_id ,$array_lpiutang_id ,$array_dpiutang_nilai ,$array_dpiutang_keterangan
 										,$cetak_lp);
@@ -412,14 +412,14 @@ class C_master_lunas_hutang extends Controller {
 		$cara_bayar=$this->m_master_lunas_hutang->cara_bayar($fhutang_id);
 		
 		$data['fpiutang_nobukti']=$rs->fpiutang_nobukti;
-		$data['fpiutang_tanggal']=date('d-m-Y', strtotime($rs->fpiutang_tanggal));
+		$data['fhutang_tanggal']=date('d-m-Y', strtotime($rs->fhutang_tanggal));
 		$data['cust_no']=$rs->cust_no;
 		$data['cust_nama']=$rs->cust_nama;
 		$data['cust_alamat']=$rs->cust_alamat;
 		$data['detail_fpiutang']=$detail_fpiutang;
 		
 		if($cara_bayar!==NULL){
-			$data['cara_bayar1']=$cara_bayar->fpiutang_cara;
+			$data['cara_bayar1']=$cara_bayar->fhutang_cara;
 			$data['nilai_bayar1']=$cara_bayar->bayar_nilai;
 		}else{
 			$data['cara_bayar1']="";
@@ -435,8 +435,8 @@ class C_master_lunas_hutang extends Controller {
 	
 	function master_lunas_hutang_batal(){
 		$fhutang_id=trim($_POST["fhutang_id"]);
-		$fpiutang_tanggal=trim(@$_POST["fpiutang_tanggal"]);
-		$result=$this->m_master_lunas_hutang->master_lunas_hutang_batal($fhutang_id, $fpiutang_tanggal);
+		$fhutang_tanggal=trim(@$_POST["fhutang_tanggal"]);
+		$result=$this->m_master_lunas_hutang->master_lunas_hutang_batal($fhutang_id, $fhutang_tanggal);
 		echo $result;
 	}
 	

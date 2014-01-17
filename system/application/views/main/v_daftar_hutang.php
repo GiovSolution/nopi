@@ -646,7 +646,7 @@ Ext.onReady(function(){
 			renderer: Ext.util.Format.dateRenderer('d-m-Y')
 		},
 		{
-			header: '<div align="center">' + 'Piutang No Bukti' + '</div>',
+			header: '<div align="center">' + 'Pelunasan Hutang No.' + '</div>',
 			dataIndex: 'nobukti',
 			width: 80,
 			sortable: true
