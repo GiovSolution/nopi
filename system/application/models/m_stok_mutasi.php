@@ -238,6 +238,7 @@ class M_stok_mutasi extends Model{
 					produk.produk_kode as produk_kode,
 					produk.produk_nama as produk_nama,
 					satuan.satuan_nama as satuan_nama,
+					kategori.kategori_nama as kategori_nama,
 					IFNULL(
 						ksf3.stok_awal
 					,0) AS stok_awal,
@@ -253,6 +254,7 @@ class M_stok_mutasi extends Model{
 				LEFT JOIN kartu_stok_fix as kartu_stok_fix_all ON (produk.produk_id = kartu_stok_fix_all.ks_produk_id)
 				INNER JOIN satuan_konversi ON (satuan_konversi.konversi_produk = produk.produk_id AND satuan_konversi.konversi_nilai = 1)
 				INNER JOIN satuan ON (satuan.satuan_id = satuan_konversi.konversi_satuan)
+				INNER JOIN kategori ON (kategori.kategori_id = produk.produk_kategori)
 				INNER JOIN satuan_konversi sk2 ON (sk2.konversi_produk = produk.produk_id AND sk2.konversi_default = true)
 				LEFT JOIN (SELECT kartu_stok_akhir.ks_produk_id as ksf_produk_id,
 							(SUM(kartu_stok_akhir.ks_masuk*kartu_stok_akhir.ks_satuan_nilai))-
@@ -311,7 +313,7 @@ class M_stok_mutasi extends Model{
 					,0) '0' ";
 			}
 			
-			$sql.="	GROUP BY produk.produk_id";
+			$sql.="	GROUP BY produk.produk_id  ORDER BY kategori.kategori_nama ";
 			
 		
 			// SISTEM STOK LAMA
@@ -409,6 +411,7 @@ class M_stok_mutasi extends Model{
 					produk.produk_kode as produk_kode,
 					produk.produk_nama as produk_nama,
 					satuan.satuan_nama as satuan_nama,
+					kategori.kategori_nama as kategori_nama,
 					IFNULL(
 						ksf3.stok_awal
 					,0) AS stok_awal,
@@ -424,6 +427,7 @@ class M_stok_mutasi extends Model{
 				LEFT JOIN kartu_stok_fix as kartu_stok_fix_all ON (produk.produk_id = kartu_stok_fix_all.ks_produk_id)
 				INNER JOIN satuan_konversi ON (satuan_konversi.konversi_produk = produk.produk_id AND satuan_konversi.konversi_nilai = 1)
 				INNER JOIN satuan ON (satuan.satuan_id = satuan_konversi.konversi_satuan)
+				INNER JOIN kategori ON (kategori.kategori_id = produk.produk_kategori)
 				INNER JOIN satuan_konversi sk2 ON (sk2.konversi_produk = produk.produk_id AND sk2.konversi_default = true)
 				LEFT JOIN (SELECT kartu_stok_akhir.ks_produk_id as ksf_produk_id,
 							(SUM(kartu_stok_akhir.ks_masuk*kartu_stok_akhir.ks_satuan_nilai))-
@@ -482,7 +486,7 @@ class M_stok_mutasi extends Model{
 					,0) '0' ";
 			}
 			
-			$sql.="	GROUP BY produk.produk_id";
+			$sql.="	GROUP BY produk.produk_id ORDER BY kategori.kategori_nama";
 			
 			/*						
 					
@@ -553,6 +557,7 @@ class M_stok_mutasi extends Model{
 					produk.produk_kode as produk_kode,
 					produk.produk_nama as produk_nama,
 					satuan.satuan_nama as satuan_nama,
+					kategori.kategori_nama as kategori_nama,
 					IFNULL(
 						ksf3.stok_awal
 					,0) AS stok_awal,
@@ -568,6 +573,7 @@ class M_stok_mutasi extends Model{
 				LEFT JOIN kartu_stok_fix as kartu_stok_fix_all ON (produk.produk_id = kartu_stok_fix_all.ks_produk_id)
 				INNER JOIN satuan_konversi ON (satuan_konversi.konversi_produk = produk.produk_id AND satuan_konversi.konversi_nilai = 1)
 				INNER JOIN satuan ON (satuan.satuan_id = satuan_konversi.konversi_satuan)
+				INNER JOIN kategori ON (kategori.kategori_id = produk.produk_kategori)
 				INNER JOIN satuan_konversi sk2 ON (sk2.konversi_produk = produk.produk_id AND sk2.konversi_default = true)
 				LEFT JOIN (SELECT kartu_stok_akhir.ks_produk_id as ksf_produk_id,
 							(SUM(kartu_stok_akhir.ks_masuk*kartu_stok_akhir.ks_satuan_nilai))-
@@ -626,7 +632,7 @@ class M_stok_mutasi extends Model{
 					,0) '0' ";
 			}
 			
-			$sql.="	GROUP BY produk.produk_id";
+			$sql.="	GROUP BY produk.produk_id ORDER BY kategori.kategori_nama";
 
 			$result = $this->db->query($sql);
 			$nbrows = $result->num_rows();

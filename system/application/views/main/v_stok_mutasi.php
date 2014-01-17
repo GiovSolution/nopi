@@ -109,13 +109,14 @@ Ext.onReady(function(){
 			{name: 'produk_kode', type: 'string', mapping: 'produk_kode'}, 
 			//{name: 'satuan_id', type: 'int', mapping: 'satuan_id'}, 
 			{name: 'satuan_nama', type: 'string', mapping: 'satuan_nama'},
+			{name: 'kategori_nama', type: 'string', mapping: 'kategori_nama'},
 			{name: 'jumlah_awal', type: 'float', mapping: 'stok_awal'}, 
 			{name: 'jumlah_in', type: 'float', mapping: 'stok_masuk'}, 
 			{name: 'jumlah_out', type: 'float', mapping: 'stok_keluar'},
 			{name: 'jumlah_stok', type: 'float', mapping: 'stok_akhir'},
 			{name: 'stok_harga', type: 'float', mapping: 'stok_harga'}
-		]),
-		sortInfo:{field: 'produk_kode', direction: "ASC"}
+		])
+		// sortInfo:{field: 'produk_kode', direction: "ASC"}
 	});
 	/* End of Function */
 	
@@ -198,6 +199,13 @@ Ext.onReady(function(){
 		{
 			header: '<div align="center">Satuan</div>',
 			dataIndex: 'satuan_nama',
+			width: 150,
+			sortable: true,
+			readOnly: true
+		},
+		{
+			header: '<div align="center">Kategori</div>',
+			dataIndex: 'kategori_nama',
 			width: 150,
 			sortable: true,
 			readOnly: true

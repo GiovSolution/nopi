@@ -32,3 +32,4 @@ ERROR - 2014-01-17 10:47:48 --> Severity: Notice  --> Undefined index:  fpiutang
 ERROR - 2014-01-17 10:47:48 --> Severity: Notice  --> Undefined index:  selected_id /Applications/MAMP/htdocs/nopi/system/application/controllers/c_master_lunas_piutang.php 146
 ERROR - 2014-01-17 10:47:53 --> Severity: Notice  --> Undefined index:  fpiutang_id /Applications/MAMP/htdocs/nopi/system/application/controllers/c_master_lunas_piutang.php 143
 ERROR - 2014-01-17 10:47:53 --> Severity: Notice  --> Undefined index:  selected_id /Applications/MAMP/htdocs/nopi/system/application/controllers/c_master_lunas_piutang.php 146
+ERROR - 2014-01-17 15:55:11 --> Query error: 
