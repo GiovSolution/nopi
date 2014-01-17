@@ -249,66 +249,66 @@ Ext.onReady(function(){
 				/*
 				 * DATA-DATA MASTER
 				*/
-				var fpiutang_id_create_pk=0;
-				var fpiutang_no_create='';
-				var fpiutang_cust_create='';
+				var fhutang_id_create_pk=0;
+				var fhutang_no_create='';
+				var fhutang_cust_create='';
 				var fhutang_tgl_create='';
-				var fpiutang_keterangan_create='';
-				var fpiutang_status_create='';
-				var fpiutang_cara_create='';
+				var fhutang_keterangan_create='';
+				var fhutang_status_create='';
+				var fhutang_cara_create='';
 				
 				//bayar
-				var fpiutang_bayar_create=0;
+				var fhutang_bayar_create=0;
 				
 				//kwitansi
-				var fpiutang_kwitansi_nama_create="";
-				var fpiutang_kwitansi_nomor_create="";
+				var fhutang_kwitansi_nama_create="";
+				var fhutang_kwitansi_nomor_create="";
 				//card
-				var fpiutang_card_nama_create="";
-				var fpiutang_card_edc_create="";
-				var fpiutang_card_no_create="";
+				var fhutang_card_nama_create="";
+				var fhutang_card_edc_create="";
+				var fhutang_card_no_create="";
 				//cek
-				var fpiutang_cek_nama_create="";
-				var fpiutang_cek_nomor_create="";
-				var fpiutang_cek_valid_create="";
-				var fpiutang_cek_bank_create="";
+				var fhutang_cek_nama_create="";
+				var fhutang_cek_nomor_create="";
+				var fhutang_cek_valid_create="";
+				var fhutang_cek_bank_create="";
 				//transfer
-				var fpiutang_transfer_bank_create="";
-				var fpiutang_transfer_nama_create="";
+				var fhutang_transfer_bank_create="";
+				var fhutang_transfer_nama_create="";
 				
-				if((fhutang_idField.getValue()!==null) && (fhutang_idField.getValue()!==0) && (fhutang_idField.getValue()!=='')){fpiutang_id_create_pk = fhutang_idField.getValue();}else{fpiutang_id_create_pk=get_pk_id();} 
-				if((fhutang_nobuktiField.getValue()!==null) && (fhutang_nobuktiField.getValue()!=='')){fpiutang_no_create = fhutang_nobuktiField.getValue();}
+				if((fhutang_idField.getValue()!==null) && (fhutang_idField.getValue()!==0) && (fhutang_idField.getValue()!=='')){fhutang_id_create_pk = fhutang_idField.getValue();}else{fhutang_id_create_pk=get_pk_id();} 
+				if((fhutang_nobuktiField.getValue()!==null) && (fhutang_nobuktiField.getValue()!=='')){fhutang_no_create = fhutang_nobuktiField.getValue();}
 				if((fhutang_supplierField.getValue()!==null) && (fhutang_supplierField.getValue()!=='') && (fhutang_post2db=="CREATE")){
-					fpiutang_cust_create = fhutang_supplierField.getValue();
+					fhutang_cust_create = fhutang_supplierField.getValue();
 				}else if(fhutang_post2db=="UPDATE"){
-					fpiutang_cust_create = fhutang_customer_idField.getValue();
+					fhutang_cust_create = fhutang_customer_idField.getValue();
 				}
 				if((fhutang_tanggalField.getValue()!==null) && (fhutang_tanggalField.getValue()!=='')){fhutang_tgl_create = fhutang_tanggalField.getValue().format('Y-m-d');} 
-				if((fhutang_keteranganField.getValue()!==null) && (fhutang_keteranganField.getValue()!=='')){fpiutang_keterangan_create = fhutang_keteranganField.getValue();} 
-				if((fhutang_stat_dokField.getValue()!==null) && (fhutang_stat_dokField.getValue()!=='')){fpiutang_status_create = fhutang_stat_dokField.getValue();}
-				if((fhutang_caraField.getValue()!==null) && (fhutang_caraField.getValue()!=='')){fpiutang_cara_create = fhutang_caraField.getValue();}
+				if((fhutang_keteranganField.getValue()!==null) && (fhutang_keteranganField.getValue()!=='')){fhutang_keterangan_create = fhutang_keteranganField.getValue();} 
+				if((fhutang_stat_dokField.getValue()!==null) && (fhutang_stat_dokField.getValue()!=='')){fhutang_status_create = fhutang_stat_dokField.getValue();}
+				if((fhutang_caraField.getValue()!==null) && (fhutang_caraField.getValue()!=='')){fhutang_cara_create = fhutang_caraField.getValue();}
 				
 				//bayar
-				if((fhutang_bayarField.getValue()!==null) && (fhutang_bayarField.getValue()!==0) && (fhutang_bayarField.getValue()!=='')){fpiutang_bayar_create = fhutang_bayarField.getValue();}
+				if((fhutang_bayarField.getValue()!==null) && (fhutang_bayarField.getValue()!==0) && (fhutang_bayarField.getValue()!=='')){fhutang_bayar_create = fhutang_bayarField.getValue();}
 				//kwitansi value
 				if((fhutang_kwitansi_noField.getValue()!=="") && (fhutang_post2db=='CREATE')){
-					fpiutang_kwitansi_nomor_create = fhutang_kwitansi_noField.getValue();
+					fhutang_kwitansi_nomor_create = fhutang_kwitansi_noField.getValue();
 				}else if(fhutang_post2db=='UPDATE'){
-					fpiutang_kwitansi_nomor_create = fhutang_kwitansi_idField.getValue();
+					fhutang_kwitansi_nomor_create = fhutang_kwitansi_idField.getValue();
 				}
-				if(fhutang_kwitansi_namaField.getValue()!== ""){fpiutang_kwitansi_nama_create = fhutang_kwitansi_namaField.getValue();} 
+				if(fhutang_kwitansi_namaField.getValue()!== ""){fhutang_kwitansi_nama_create = fhutang_kwitansi_namaField.getValue();} 
 				//card value
-				if(fhutang_card_namaField.getValue()!== ""){fpiutang_card_nama_create = fhutang_card_namaField.getValue();} 
-				if(fhutang_card_edcField.getValue()!==""){fpiutang_card_edc_create = fhutang_card_edcField.getValue();} 
-				if(fhutang_card_noField.getValue()!==""){fpiutang_card_no_create = fhutang_card_noField.getValue();}
+				if(fhutang_card_namaField.getValue()!== ""){fhutang_card_nama_create = fhutang_card_namaField.getValue();} 
+				if(fhutang_card_edcField.getValue()!==""){fhutang_card_edc_create = fhutang_card_edcField.getValue();} 
+				if(fhutang_card_noField.getValue()!==""){fhutang_card_no_create = fhutang_card_noField.getValue();}
 				//cek value
-				if(fhutang_cek_namaField.getValue()!== ""){fpiutang_cek_nama_create = fhutang_cek_namaField.getValue();} 
-				if(fhutang_cek_noField.getValue()!== ""){fpiutang_cek_nomor_create = fhutang_cek_noField.getValue();} 
-				if(fhutang_cek_validField.getValue()!== ""){fpiutang_cek_valid_create = fhutang_cek_validField.getValue().format('Y-m-d');} 
-				if(fhutang_cek_bankField.getValue()!== ""){fpiutang_cek_bank_create = fhutang_cek_bankField.getValue();} 
+				if(fhutang_cek_namaField.getValue()!== ""){fhutang_cek_nama_create = fhutang_cek_namaField.getValue();} 
+				if(fhutang_cek_noField.getValue()!== ""){fhutang_cek_nomor_create = fhutang_cek_noField.getValue();} 
+				if(fhutang_cek_validField.getValue()!== ""){fhutang_cek_valid_create = fhutang_cek_validField.getValue().format('Y-m-d');} 
+				if(fhutang_cek_bankField.getValue()!== ""){fhutang_cek_bank_create = fhutang_cek_bankField.getValue();} 
 				//transfer value
-				if(fhutang_transfer_bankField.getValue()!== ""){fpiutang_transfer_bank_create = fhutang_transfer_bankField.getValue();} 
-				if(fhutang_transfer_namaField.getValue()!== ""){fpiutang_transfer_nama_create = fhutang_transfer_namaField.getValue();}
+				if(fhutang_transfer_bankField.getValue()!== ""){fhutang_transfer_bank_create = fhutang_transfer_bankField.getValue();} 
+				if(fhutang_transfer_namaField.getValue()!== ""){fhutang_transfer_nama_create = fhutang_transfer_namaField.getValue();}
 				
 				/*
 				 * DATA-DATA DETAIL
@@ -356,37 +356,37 @@ Ext.onReady(function(){
 							waitMsg: 'Mohon tunggu...',
 							url: 'index.php?c=c_master_lunas_hutang&m=get_action',
 							params: {
-								task				: fhutang_post2db,
-								fhutang_id			: fpiutang_id_create_pk, 
-								fpiutang_no			: fpiutang_no_create,
-								fpiutang_cust		: fpiutang_cust_create,
-								fpiutang_tanggal	: fhutang_tgl_create,
-								fpiutang_keterangan	: fpiutang_keterangan_create,
-								fpiutang_status		: fpiutang_status_create,
-								fpiutang_cara		: fpiutang_cara_create, 
-								fpiutang_bayar		: fpiutang_bayar_create,
+								task						: fhutang_post2db,
+								fhutang_id					: fhutang_id_create_pk, 
+								fhutang_no					: fhutang_no_create,
+								fhutang_cust				: fhutang_cust_create,
+								fhutang_tanggal				: fhutang_tgl_create,
+								fhutang_keterangan			: fhutang_keterangan_create,
+								fhutang_status				: fhutang_status_create,
+								fhutang_cara				: fhutang_cara_create, 
+								fhutang_bayar				: fhutang_bayar_create,
 								//kwitansi posting
-								fpiutang_kwitansi_no		:	fpiutang_kwitansi_nomor_create,
-								fpiutang_kwitansi_nama		:	fpiutang_kwitansi_nama_create,
+								fhutang_kwitansi_no			:	fhutang_kwitansi_nomor_create,
+								fhutang_kwitansi_nama		:	fhutang_kwitansi_nama_create,
 								//card posting
-								fpiutang_card_nama	: 	fpiutang_card_nama_create,
-								fpiutang_card_edc	:	fpiutang_card_edc_create,
-								fpiutang_card_no		:	fpiutang_card_no_create,
+								fhutang_card_nama			: 	fhutang_card_nama_create,
+								fhutang_card_edc			:	fhutang_card_edc_create,
+								fhutang_card_no				:	fhutang_card_no_create,
 								//cek posting
-								fpiutang_cek_nama	: 	fpiutang_cek_nama_create,
-								fpiutang_cek_no		:	fpiutang_cek_nomor_create,
-								fpiutang_cek_valid	: 	fpiutang_cek_valid_create,
-								fpiutang_cek_bank	:	fpiutang_cek_bank_create,
+								fhutang_cek_nama			: 	fhutang_cek_nama_create,
+								fhutang_cek_no				:	fhutang_cek_nomor_create,
+								fhutang_cek_valid			: 	fhutang_cek_valid_create,
+								fhutang_cek_bank			:	fhutang_cek_bank_create,
 								//transfer posting
-								fpiutang_transfer_bank	:	fpiutang_transfer_bank_create,
-								fpiutang_transfer_nama	:	fpiutang_transfer_nama_create,
-								cetak_lp 	: cetak_lh,
+								fpiutang_transfer_bank		:	fhutang_transfer_bank_create,
+								fpiutang_transfer_nama		:	fhutang_transfer_nama_create,
+								cetak_lp 					: cetak_lh,
 								
 								//DATA DETAIL
-								dhutang_id: encoded_array_dpiutang_id,
-								hutang_id: encoded_array_lpiutang_id,
-								dhutang_nilai: encoded_array_dpiutang_nilai,
-								dhutang_keterangan: encoded_array_dpiutang_keterangan
+								dhutang_id 					: encoded_array_dpiutang_id,
+								hutang_id  					: encoded_array_lpiutang_id,
+								dhutang_nilai   			: encoded_array_dpiutang_nilai,
+								dhutang_keterangan  		: encoded_array_dpiutang_keterangan
 							}, 
 							success: function(response){
 								var result=eval(response.responseText);
@@ -441,7 +441,7 @@ Ext.onReady(function(){
 					params: {
 						task: 'BATAL',
 						fhutang_id	: fhutang_idField.getValue(),
-						fpiutang_tanggal : fhutang_tanggalField.getValue().format('Y-m-d')
+						fhutang_tanggal : fhutang_tanggalField.getValue().format('Y-m-d')
 					}, 
 					success: function(response){             
 						var result=eval(response.responseText);
@@ -1452,7 +1452,7 @@ Ext.onReady(function(){
 		maskRe: /([0-9]+)$/
 	});
 
-	/* Identify  fpiutang_no Field */
+	/* Identify  fhutang_no Field */
 	fhutang_nobuktiField= new Ext.form.TextField({
 		id: 'fhutang_nobuktiField',
 		//fieldLabel: 'No Order',
@@ -1517,7 +1517,7 @@ Ext.onReady(function(){
 		anchor : '95%'
 	});
 	
-	/* Identify  fpiutang_tanggal Field */
+	/* Identify  fhutang_tanggal Field */
 	fhutang_tanggalField= new Ext.form.DateField({
 		id: 'fhutang_tanggalField',
 		fieldLabel: 'Tanggal',
@@ -1552,7 +1552,7 @@ Ext.onReady(function(){
 	});
 	/* END Field master_lunas_hutang_bayarGroup */
 	
-	/* Identify  fpiutang_keterangan Field */
+	/* Identify  fhutang_keterangan Field */
 	fhutang_keteranganField= new Ext.form.TextArea({
 		id: 'fhutang_keteranganField',
 		fieldLabel: 'Keterangan',
@@ -2273,10 +2273,12 @@ Ext.onReady(function(){
 			align: 'right',
 			dataIndex: 'dhutang_nilai',
 			width: 100,
-			editor:  dfhutang_bayarField,
+			editor:  dfhutang_bayarField
+			/*
 			renderer: function(val){
 				return '<span>'+Ext.util.Format.number(val,'0,000')+'</span>';
 			}
+			*/
 		},
 		{
 			header: '<div align="center">' + 'Keterangan' + '</div>',
@@ -2547,31 +2549,31 @@ Ext.onReady(function(){
 	function master_lunas_hutang_list_search(){
 		// render according to a SQL date format.
 		var fpiutang_id_search=null;
-		var fpiutang_no_search=null;
-		var fpiutang_tanggal_search_date="";
-		var fpiutang_tanggal_akhir_search_date="";
+		var fhutang_no_search=null;
+		var fhutang_tanggal_search_date="";
+		var fhutang_tanggal_akhir_search_date="";
 		var fpiutang_carabayar_search=null;
 		var fpiutang_keterangan_search=null;
-		var fpiutang_status_search=null;
+		var fhutang_status_search=null;
 
 		if(fhutang_idSearchField.getValue()!==null){fpiutang_id_search=fhutang_idSearchField.getValue();}
-		if(fhutang_noSearchField.getValue()!==null){fpiutang_no_search=fhutang_noSearchField.getValue();}
-		if(fhutang_tanggalSearchField.getValue()!==""){fpiutang_tanggal_search_date=fhutang_tanggalSearchField.getValue().format('Y-m-d');}
-		if(fhutang_tanggal_akhirSearchField.getValue()!==""){fpiutang_tanggal_akhir_search_date=fhutang_tanggal_akhirSearchField.getValue().format('Y-m-d');}
+		if(fhutang_noSearchField.getValue()!==null){fhutang_no_search=fhutang_noSearchField.getValue();}
+		if(fhutang_tanggalSearchField.getValue()!==""){fhutang_tanggal_search_date=fhutang_tanggalSearchField.getValue().format('Y-m-d');}
+		if(fhutang_tanggal_akhirSearchField.getValue()!==""){fhutang_tanggal_akhir_search_date=fhutang_tanggal_akhirSearchField.getValue().format('Y-m-d');}
 		if(fhutang_carabayarSearchField.getValue()!==null){fpiutang_carabayar_search=fhutang_carabayarSearchField.getValue();}
 		if(fhutang_keteranganSearchField.getValue()!==null){fpiutang_keterangan_search=fhutang_keteranganSearchField.getValue();}
-		if(fhutang_statusSearchField.getValue()!==null){fpiutang_status_search=fhutang_statusSearchField.getValue();}
+		if(fhutang_statusSearchField.getValue()!==null){fhutang_status_search=fhutang_statusSearchField.getValue();}
 		
 		// change the store parameters
 		master_lunas_hutang_DataStore.baseParams = {
 			task				: 'SEARCH',
 			fhutang_id			:	fpiutang_id_search, 
-			fpiutang_no			:	fpiutang_no_search, 
-			fpiutang_tgl_awal		:	fpiutang_tanggal_search_date, 
-			fpiutang_tgl_akhir		:	fpiutang_tanggal_akhir_search_date, 
+			fhutang_no			:	fhutang_no_search, 
+			fpiutang_tgl_awal		:	fhutang_tanggal_search_date, 
+			fpiutang_tgl_akhir		:	fhutang_tanggal_akhir_search_date, 
 			fpiutang_carabayar		:	fpiutang_carabayar_search,
-			fpiutang_keterangan	:	fpiutang_keterangan_search,
-			fpiutang_status		:	fpiutang_status_search
+			fhutang_keterangan	:	fpiutang_keterangan_search,
+			fhutang_status		:	fhutang_status_search
 		};
 		master_lunas_hutang_DataStore.reload({params: {start: 0, limit: fhutang_pageS}});
 	}
@@ -2643,7 +2645,7 @@ Ext.onReady(function(){
 		maskRe: /([0-9]+)$/
 	
 	});
-	/* Identify  fpiutang_no Search Field */
+	/* Identify  fhutang_no Search Field */
 	fhutang_noSearchField= new Ext.form.TextField({
 		id: 'fhutang_noSearchField',
 		//fieldLabel: 'No Order',
@@ -2652,7 +2654,7 @@ Ext.onReady(function(){
 		anchor: '95%'
 	
 	});
-	/* Identify  fpiutang_tanggal Search Field */
+	/* Identify  fhutang_tanggal Search Field */
 	fhutang_tanggalSearchField= new Ext.form.DateField({
 		id: 'fhutang_tanggalSearchField',
 		fieldLabel: 'Tanggal',
@@ -2672,8 +2674,8 @@ Ext.onReady(function(){
 	
 	fpiutang_label_tanggalField= new Ext.form.Label({ html: ' &nbsp; s/d  &nbsp;' });
 	
-	fpiutang_tanggalSearchFieldSet=new Ext.form.FieldSet({
-		id:'fpiutang_tanggalSearchFieldSet',
+	fhutang_tanggalSearchFieldSet=new Ext.form.FieldSet({
+		id:'fhutang_tanggalSearchFieldSet',
 		title: 'Opsi Tanggal',
 		layout: 'column',
 		boduStyle: 'padding: 5px;',
@@ -2696,7 +2698,7 @@ Ext.onReady(function(){
 		triggerAction: 'all'	 
 	});
 
-	/* Identify  fpiutang_keterangan Search Field */
+	/* Identify  fhutang_keterangan Search Field */
 	fhutang_keteranganSearchField= new Ext.form.TextField({
 		id: 'fhutang_keteranganSearchField',
 		fieldLabel: 'Keterangan',
@@ -2708,11 +2710,11 @@ Ext.onReady(function(){
 		id: 'fhutang_statusSearchField',
 		fieldLabel: 'Status',
 		store:new Ext.data.SimpleStore({
-			fields:['value', 'fpiutang_status'],
+			fields:['value', 'fhutang_status'],
 			data:[['Terbuka','Terbuka'],['Tertutup','Tertutup'],['Batal','Batal']]
 		}),
 		mode: 'local',
-		displayField: 'fpiutang_status',
+		displayField: 'fhutang_status',
 		valueField: 'value',
 		anchor: '41%',
 		triggerAction: 'all'	 

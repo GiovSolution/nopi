@@ -256,8 +256,8 @@ class M_master_lunas_hutang extends Model{
 		//*eof
 		
 	//insert detail record
-	function detail_lunas_hutang_insert($fpiutang_cust ,$array_dpiutang_id ,$array_lpiutang_id ,$fhutang_id ,$array_dpiutang_nilai
-										 ,$fpiutang_cara ,$array_dpiutang_keterangan ,$cetak_lp){
+	function detail_lunas_hutang_insert($fhutang_cust ,$array_dpiutang_id ,$array_lpiutang_id ,$fhutang_id ,$array_dpiutang_nilai
+										 ,$fhutang_cara ,$array_dpiutang_keterangan ,$cetak_lp){
 		$date_now=date('Y-m-d');
 		
 		$size_array = sizeof($array_lpiutang_id) - 1;
@@ -274,7 +274,7 @@ class M_master_lunas_hutang extends Model{
 					"dhutang_hutang"=>$lpiutang_id,
 					"dhutang_master"=>$fhutang_id,
 					"dhutang_nilai"=>$dpiutang_nilai,
-					//"dhutang_cara"=>$fpiutang_cara,
+					//"dhutang_cara"=>$fhutang_cara,
 					"dhutang_keterangan"=>$dpiutang_keterangan
 				);
 				// $this->db->query('LOCK TABLE detail_lunas_hutang WRITE');
@@ -286,7 +286,7 @@ class M_master_lunas_hutang extends Model{
 					"dhutang_hutang"=>$lpiutang_id,
 					"dhutang_master"=>$fhutang_id,
 					"dhutang_nilai"=>$dpiutang_nilai,
-					//"dhutang_cara"=>$fpiutang_cara,
+					//"dhutang_cara"=>$fhutang_cara,
 					"dhutang_keterangan"=>$dpiutang_keterangan
 				);
 				// $this->db->query('LOCK TABLE detail_lunas_hutang WRITE');
@@ -312,7 +312,7 @@ class M_master_lunas_hutang extends Model{
 			/*
 			if($cetak_lp==1 && $i==$size_array){
 			
-				$sql = "SELECT * FROM vu_hutang_total_lunas WHERE vu_hutang_total_lunas.fhutang_cust='".$fpiutang_cust."'";
+				$sql = "SELECT * FROM vu_hutang_total_lunas WHERE vu_hutang_total_lunas.fhutang_cust='".$fhutang_cust."'";
 				$rs = $this->db->query($sql);
 				if($rs->num_rows()>0){
 					foreach($rs->result() as $row){
@@ -344,7 +344,7 @@ class M_master_lunas_hutang extends Model{
 				
 			}else if($cetak_lp<>1 && $i==$size_array){
 			
-				$sql = "SELECT * FROM vu_hutang_total_lunas WHERE vu_hutang_total_lunas.fhutang_cust='".$fpiutang_cust."'";
+				$sql = "SELECT * FROM vu_hutang_total_lunas WHERE vu_hutang_total_lunas.fhutang_cust='".$fhutang_cust."'";
 				$rs = $this->db->query($sql);
 				if($rs->num_rows()>0){
 					foreach($rs->result() as $row){
@@ -377,10 +377,10 @@ class M_master_lunas_hutang extends Model{
 		function master_lunas_hutang_list($filter,$start,$end){
 			/*$query = "SELECT fhutang_id
 					,fpiutang_nobukti
-					,fpiutang_cust
-					,date_format(fpiutang_tanggal,'%Y-%m-%d') AS fpiutang_tanggal
-					,fpiutang_cara
-					,fpiutang_bayar
+					,fhutang_cust
+					,date_format(fhutang_tanggal,'%Y-%m-%d') AS fhutang_tanggal
+					,fhutang_cara
+					,fhutang_bayar
 					,fpiutang_stat_dok
 					,cust_id
 					,cust_nama
@@ -388,8 +388,8 @@ class M_master_lunas_hutang extends Model{
 					,vu_piutang_total_bycust.lpiutang_total
 					,vu_piutang_total_bycust.lpiutang_sisa
 				FROM master_faktur_lunas_piutang
-					LEFT JOIN customer ON(cust_id=fpiutang_cust)
-					LEFT JOIN vu_piutang_total_bycust ON(vu_piutang_total_bycust.lpiutang_cust=master_faktur_lunas_piutang.fpiutang_cust)";
+					LEFT JOIN customer ON(cust_id=fhutang_cust)
+					LEFT JOIN vu_piutang_total_bycust ON(vu_piutang_total_bycust.lpiutang_cust=master_faktur_lunas_piutang.fhutang_cust)";
 					*/
 			$query = "SELECT master_lunas_hutang.* , supplier.supplier_nama, supplier.supplier_id, supplier.supplier_alamat ,
 						vu_hutang_total_bycust.hutang_total , vu_hutang_total_bycust.hutang_sisa
@@ -425,11 +425,11 @@ class M_master_lunas_hutang extends Model{
 		}
 		
 	//function for update record
-	function master_lunas_hutang_update($fhutang_id ,$fpiutang_no ,$fpiutang_cust ,$fpiutang_tanggal, $fpiutang_keterangan ,$fpiutang_status
-										,$fpiutang_cara ,$fpiutang_bayar
-										,$fpiutang_kwitansi_no ,$fpiutang_kwitansi_nama
-										,$fpiutang_card_nama ,$fpiutang_card_edc ,$fpiutang_card_no
-										,$fpiutang_cek_nama ,$fpiutang_cek_no ,$fpiutang_cek_valid ,$fpiutang_cek_bank
+	function master_lunas_hutang_update($fhutang_id ,$fhutang_no ,$fhutang_cust ,$fhutang_tanggal, $fhutang_keterangan ,$fhutang_status
+										,$fhutang_cara ,$fhutang_bayar
+										,$fhutang_kwitansi_no ,$fhutang_kwitansi_nama
+										,$fhutang_card_nama ,$fhutang_card_edc ,$fhutang_card_no
+										,$fhutang_cek_nama ,$fhutang_cek_no ,$fhutang_cek_valid ,$fhutang_cek_bank
 										,$fpiutang_transfer_bank ,$fpiutang_transfer_nama
 										,$array_dpiutang_id ,$array_lpiutang_id ,$array_dpiutang_nilai ,$array_dpiutang_keterangan
 										,$cetak_lp){
@@ -439,10 +439,10 @@ class M_master_lunas_hutang extends Model{
 		$jenis_transaksi = 'jual_lunas';
 		
 		$data = array(
-			"fhutang_tanggal"=>$fpiutang_tanggal,
-			"fhutang_cara"=>$fpiutang_cara,
-			"fhutang_bayar"=>$fpiutang_bayar,
-			"fhutang_keterangan"=>$fpiutang_keterangan,
+			"fhutang_tanggal"=>$fhutang_tanggal,
+			"fhutang_cara"=>$fhutang_cara,
+			"fhutang_bayar"=>$fhutang_bayar,
+			"fhutang_keterangan"=>$fhutang_keterangan,
 			"fhutang_date_update"=>$datetime_now,
 			"fhutang_update"=>$_SESSION[SESSION_USERID]
 		);
@@ -460,64 +460,64 @@ class M_master_lunas_hutang extends Model{
 		$this->db->query('UNLOCK TABLES');
 		if($rs>-1){
 			$time_now = date('H:i:s');
-			$bayar_date_create_temp = $fpiutang_tanggal.' '.$time_now;
+			$bayar_date_create_temp = $fhutang_tanggal.' '.$time_now;
 			$bayar_date_create = date('Y-m-d H:i:s', strtotime($bayar_date_create_temp));
 			
 			//delete all transaksi
-			$sql="delete from jual_kwitansi where jkwitansi_ref='".$fpiutang_no."'";
+			$sql="delete from jual_kwitansi where jkwitansi_ref='".$fhutang_no."'";
 			$this->db->query($sql);
 			if($this->db->affected_rows()>-1){
-				$sql="delete from jual_card where jcard_ref='".$fpiutang_no."'";
+				$sql="delete from jual_card where jcard_ref='".$fhutang_no."'";
 				$this->db->query($sql);
 				if($this->db->affected_rows()>-1){
-					$sql="delete from jual_cek where jcek_ref='".$fpiutang_no."'";
+					$sql="delete from jual_cek where jcek_ref='".$fhutang_no."'";
 					$this->db->query($sql);
 					if($this->db->affected_rows()>-1){
-						$sql="delete from jual_transfer where jtransfer_ref='".$fpiutang_no."'";
+						$sql="delete from jual_transfer where jtransfer_ref='".$fhutang_no."'";
 						$this->db->query($sql);
 						if($this->db->affected_rows()>-1){
-							$sql="delete from jual_tunai where jtunai_ref='".$fpiutang_no."'";
+							$sql="delete from jual_tunai where jtunai_ref='".$fhutang_no."'";
 							$this->db->query($sql);
 							if($this->db->affected_rows()>-1){
-								if($fpiutang_cara!=null || $fpiutang_cara!=''){
-									if($fpiutang_cara=='kwitansi'){
-										$result_bayar = $this->m_public_function->cara_bayar_kwitansi_insert($fpiutang_kwitansi_no
-																						  ,$fpiutang_bayar
-																						  ,$fpiutang_no
+								if($fhutang_cara!=null || $fhutang_cara!=''){
+									if($fhutang_cara=='kwitansi'){
+										$result_bayar = $this->m_public_function->cara_bayar_kwitansi_insert($fhutang_kwitansi_no
+																						  ,$fhutang_bayar
+																						  ,$fhutang_no
 																						  ,$bayar_date_create
 																						  ,$jenis_transaksi
 																						  ,$cetak_lp);
 										
-									}elseif($fpiutang_cara=='card'){
-										$result_bayar = $this->m_public_function->cara_bayar_card_insert($fpiutang_card_nama
-																					  ,$fpiutang_card_edc
-																					  ,$fpiutang_card_no
-																					  ,$fpiutang_bayar
-																					  ,$fpiutang_no
+									}elseif($fhutang_cara=='card'){
+										$result_bayar = $this->m_public_function->cara_bayar_card_insert($fhutang_card_nama
+																					  ,$fhutang_card_edc
+																					  ,$fhutang_card_no
+																					  ,$fhutang_bayar
+																					  ,$fhutang_no
 																					  ,$bayar_date_create
 																					  ,$jenis_transaksi
 																					  ,$cetak_lp);
-									}elseif($fpiutang_cara=='cek/giro'){
-										$result_bayar = $this->m_public_function->cara_bayar_cek_insert($fpiutang_cek_nama
-																					 ,$fpiutang_cek_no
-																					 ,$fpiutang_cek_valid
-																					 ,$fpiutang_cek_bank
-																					 ,$fpiutang_bayar
-																					 ,$fpiutang_no
+									}elseif($fhutang_cara=='cek/giro'){
+										$result_bayar = $this->m_public_function->cara_bayar_cek_insert($fhutang_cek_nama
+																					 ,$fhutang_cek_no
+																					 ,$fhutang_cek_valid
+																					 ,$fhutang_cek_bank
+																					 ,$fhutang_bayar
+																					 ,$fhutang_no
 																					 ,$bayar_date_create
 																					 ,$jenis_transaksi
 																					 ,$cetak_lp);
-									}elseif($fpiutang_cara=='transfer'){
+									}elseif($fhutang_cara=='transfer'){
 										$result_bayar = $this->m_public_function->cara_bayar_transfer_insert($fpiutang_transfer_bank
 																						  ,$fpiutang_transfer_nama
-																						  ,$fpiutang_bayar
-																						  ,$fpiutang_no
+																						  ,$fhutang_bayar
+																						  ,$fhutang_no
 																						  ,$bayar_date_create
 																						  ,$jenis_transaksi
 																						  ,$cetak_lp);
-									}elseif($fpiutang_cara=='tunai'){
-										$result_bayar = $this->m_public_function->cara_bayar_tunai_insert($fpiutang_bayar
-																					   ,$fpiutang_no
+									}elseif($fhutang_cara=='tunai'){
+										$result_bayar = $this->m_public_function->cara_bayar_tunai_insert($fhutang_bayar
+																					   ,$fhutang_no
 																					   ,$bayar_date_create
 																					   ,$jenis_transaksi
 																					   ,$cetak_lp);
@@ -529,7 +529,7 @@ class M_master_lunas_hutang extends Model{
 				}
 			}
 			
-			$rs_dpiutang_insert = $this->detail_lunas_hutang_insert($fpiutang_cust ,$array_dpiutang_id ,$array_lpiutang_id ,$fhutang_id ,$array_dpiutang_nilai , $fpiutang_cara, $array_dpiutang_keterangan ,$cetak_lp);
+			$rs_dpiutang_insert = $this->detail_lunas_hutang_insert($fhutang_cust ,$array_dpiutang_id ,$array_lpiutang_id ,$fhutang_id ,$array_dpiutang_nilai , $fhutang_cara, $array_dpiutang_keterangan ,$cetak_lp);
 			
 			if($cetak_lp==1){
 				return $rs_dpiutang_insert;
@@ -543,11 +543,11 @@ class M_master_lunas_hutang extends Model{
 	}
 	
 	//function for create new record
-	function master_lunas_hutang_create($fpiutang_cust ,$fpiutang_tanggal, $fpiutang_keterangan ,$fpiutang_status
-										,$fpiutang_cara ,$fpiutang_bayar
-										,$fpiutang_kwitansi_no ,$fpiutang_kwitansi_nama
-										,$fpiutang_card_nama ,$fpiutang_card_edc ,$fpiutang_card_no
-										,$fpiutang_cek_nama ,$fpiutang_cek_no ,$fpiutang_cek_valid ,$fpiutang_cek_bank
+	function master_lunas_hutang_create($fhutang_cust ,$fhutang_tanggal, $fhutang_keterangan ,$fhutang_status
+										,$fhutang_cara ,$fhutang_bayar
+										,$fhutang_kwitansi_no ,$fhutang_kwitansi_nama
+										,$fhutang_card_nama ,$fhutang_card_edc ,$fhutang_card_no
+										,$fhutang_cek_nama ,$fhutang_cek_no ,$fhutang_cek_valid ,$fhutang_cek_bank
 										,$fpiutang_transfer_bank ,$fpiutang_transfer_nama
 										,$array_dpiutang_id ,$array_lpiutang_id ,$array_dpiutang_nilai ,$array_dpiutang_keterangan
 										,$cetak_lp){
@@ -555,17 +555,17 @@ class M_master_lunas_hutang extends Model{
 		
 		$jenis_transaksi = 'jual_lunas_hutang';
 		
-		$hutang_tanggal_pattern = strtotime($fpiutang_tanggal);
+		$hutang_tanggal_pattern = strtotime($fhutang_tanggal);
 		$pattern="LH/".date("ym",$hutang_tanggal_pattern)."-";
-		$fpiutang_no=$this->m_public_function->get_kode_1('master_lunas_hutang','fhutang_nobukti',$pattern,12);
+		$fhutang_no=$this->m_public_function->get_kode_1('master_lunas_hutang','fhutang_nobukti',$pattern,12);
 		
 		$data = array(
-			"fhutang_nobukti"=>$fpiutang_no,
-			"fhutang_cust"=>$fpiutang_cust,
-			"fhutang_tanggal"=>$fpiutang_tanggal,
-			"fhutang_cara"=>$fpiutang_cara,
-			"fhutang_bayar"=>$fpiutang_bayar,
-			"fhutang_keterangan"=>$fpiutang_keterangan,
+			"fhutang_nobukti"=>$fhutang_no,
+			"fhutang_cust"=>$fhutang_cust,
+			"fhutang_tanggal"=>$fhutang_tanggal,
+			"fhutang_cara"=>$fhutang_cara,
+			"fhutang_bayar"=>$fhutang_bayar,
+			"fhutang_keterangan"=>$fhutang_keterangan,
 			"fhutang_creator"=>$_SESSION[SESSION_USERID]
 		);
 		
@@ -582,64 +582,64 @@ class M_master_lunas_hutang extends Model{
 		$this->db->query('UNLOCK TABLES');
 		if($rs>0){
 			$time_now = date('H:i:s');
-			$bayar_date_create_temp = $fpiutang_tanggal.' '.$time_now;
+			$bayar_date_create_temp = $fhutang_tanggal.' '.$time_now;
 			$bayar_date_create = date('Y-m-d H:i:s', strtotime($bayar_date_create_temp));
 			
 			//delete all transaksi
-			$sql="delete from jual_kwitansi where jkwitansi_ref='".$fpiutang_no."'";
+			$sql="delete from jual_kwitansi where jkwitansi_ref='".$fhutang_no."'";
 			$this->db->query($sql);
 			if($this->db->affected_rows()>-1){
-				$sql="delete from jual_card where jcard_ref='".$fpiutang_no."'";
+				$sql="delete from jual_card where jcard_ref='".$fhutang_no."'";
 				$this->db->query($sql);
 				if($this->db->affected_rows()>-1){
-					$sql="delete from jual_cek where jcek_ref='".$fpiutang_no."'";
+					$sql="delete from jual_cek where jcek_ref='".$fhutang_no."'";
 					$this->db->query($sql);
 					if($this->db->affected_rows()>-1){
-						$sql="delete from jual_transfer where jtransfer_ref='".$fpiutang_no."'";
+						$sql="delete from jual_transfer where jtransfer_ref='".$fhutang_no."'";
 						$this->db->query($sql);
 						if($this->db->affected_rows()>-1){
-							$sql="delete from jual_tunai where jtunai_ref='".$fpiutang_no."'";
+							$sql="delete from jual_tunai where jtunai_ref='".$fhutang_no."'";
 							$this->db->query($sql);
 							if($this->db->affected_rows()>-1){
-								if($fpiutang_cara!=null || $fpiutang_cara!=''){
-									if($fpiutang_cara=='kwitansi'){
-										$result_bayar = $this->m_public_function->cara_bayar_kwitansi_insert($fpiutang_kwitansi_no
-																						  ,$fpiutang_bayar
-																						  ,$fpiutang_no
+								if($fhutang_cara!=null || $fhutang_cara!=''){
+									if($fhutang_cara=='kwitansi'){
+										$result_bayar = $this->m_public_function->cara_bayar_kwitansi_insert($fhutang_kwitansi_no
+																						  ,$fhutang_bayar
+																						  ,$fhutang_no
 																						  ,$bayar_date_create
 																						  ,$jenis_transaksi
 																						  ,$cetak_lp);
 										
-									}elseif($fpiutang_cara=='card'){
-										$result_bayar = $this->m_public_function->cara_bayar_card_insert($fpiutang_card_nama
-																					  ,$fpiutang_card_edc
-																					  ,$fpiutang_card_no
-																					  ,$fpiutang_bayar
-																					  ,$fpiutang_no
+									}elseif($fhutang_cara=='card'){
+										$result_bayar = $this->m_public_function->cara_bayar_card_insert($fhutang_card_nama
+																					  ,$fhutang_card_edc
+																					  ,$fhutang_card_no
+																					  ,$fhutang_bayar
+																					  ,$fhutang_no
 																					  ,$bayar_date_create
 																					  ,$jenis_transaksi
 																					  ,$cetak_lp);
-									}elseif($fpiutang_cara=='cek/giro'){
-										$result_bayar = $this->m_public_function->cara_bayar_cek_insert($fpiutang_cek_nama
-																					 ,$fpiutang_cek_no
-																					 ,$fpiutang_cek_valid
-																					 ,$fpiutang_cek_bank
-																					 ,$fpiutang_bayar
-																					 ,$fpiutang_no
+									}elseif($fhutang_cara=='cek/giro'){
+										$result_bayar = $this->m_public_function->cara_bayar_cek_insert($fhutang_cek_nama
+																					 ,$fhutang_cek_no
+																					 ,$fhutang_cek_valid
+																					 ,$fhutang_cek_bank
+																					 ,$fhutang_bayar
+																					 ,$fhutang_no
 																					 ,$bayar_date_create
 																					 ,$jenis_transaksi
 																					 ,$cetak_lp);
-									}elseif($fpiutang_cara=='transfer'){
+									}elseif($fhutang_cara=='transfer'){
 										$result_bayar = $this->m_public_function->cara_bayar_transfer_insert($fpiutang_transfer_bank
 																						  ,$fpiutang_transfer_nama
-																						  ,$fpiutang_bayar
-																						  ,$fpiutang_no
+																						  ,$fhutang_bayar
+																						  ,$fhutang_no
 																						  ,$bayar_date_create
 																						  ,$jenis_transaksi
 																						  ,$cetak_lp);
-									}elseif($fpiutang_cara=='tunai'){
-										$result_bayar = $this->m_public_function->cara_bayar_tunai_insert($fpiutang_bayar
-																					   ,$fpiutang_no
+									}elseif($fhutang_cara=='tunai'){
+										$result_bayar = $this->m_public_function->cara_bayar_tunai_insert($fhutang_bayar
+																					   ,$fhutang_no
 																					   ,$bayar_date_create
 																					   ,$jenis_transaksi
 																					   ,$cetak_lp);
@@ -651,8 +651,8 @@ class M_master_lunas_hutang extends Model{
 				}
 			}
 			
-			$rs_dpiutang_insert = $this->detail_lunas_hutang_insert($fpiutang_cust ,$array_dpiutang_id ,$array_lpiutang_id ,$fhutang_id
-																	 ,$array_dpiutang_nilai ,$fpiutang_cara ,$array_dpiutang_keterangan ,$cetak_lp);
+			$rs_dpiutang_insert = $this->detail_lunas_hutang_insert($fhutang_cust ,$array_dpiutang_id ,$array_lpiutang_id ,$fhutang_id
+																	 ,$array_dpiutang_nilai ,$fhutang_cara ,$array_dpiutang_keterangan ,$cetak_lp);
 			
 			if($cetak_lp==1){
 				return $rs_dpiutang_insert;
@@ -689,7 +689,7 @@ class M_master_lunas_hutang extends Model{
 		}
 	
 	function print_paper($fhutang_id){
-		$sql="SELECT fpiutang_tanggal
+		$sql="SELECT fhutang_tanggal
 				,cust_no
 				,cust_nama
 				,cust_alamat
@@ -699,7 +699,7 @@ class M_master_lunas_hutang extends Model{
 			FROM detail_lunas_piutang
 				LEFT JOIN master_lunas_piutang ON(lpiutang_id=dpiutang_master)
 				LEFT JOIN master_faktur_lunas_piutang ON(fpiutang_nobukti=dpiutang_nobukti)
-				LEFT JOIN customer ON(cust_id=fpiutang_cust)
+				LEFT JOIN customer ON(cust_id=fhutang_cust)
 			WHERE fhutang_id='".$fhutang_id."'
 			ORDER BY lpiutang_faktur ASC";
 		$result = $this->db->query($sql);
@@ -707,17 +707,17 @@ class M_master_lunas_hutang extends Model{
 	}
 	
 	function cara_bayar($fhutang_id){
-		$sql="SELECT fpiutang_nobukti, fpiutang_cara FROM master_faktur_lunas_piutang WHERE fhutang_id='".$fhutang_id."'";
+		$sql="SELECT fpiutang_nobukti, fhutang_cara FROM master_faktur_lunas_piutang WHERE fhutang_id='".$fhutang_id."'";
 		$rs=$this->db->query($sql);
 		if($rs->num_rows()){
 			$record=$rs->row();
 			$fpiutang_nobukti = $record->fpiutang_nobukti;
-			if(($record->fpiutang_cara !== NULL || $record->fpiutang_cara !== '')){
-				if($record->fpiutang_cara == 'tunai'){
+			if(($record->fhutang_cara !== NULL || $record->fhutang_cara !== '')){
+				if($record->fhutang_cara == 'tunai'){
 					$sql = "SELECT jtunai_id FROM jual_tunai WHERE jtunai_ref='".$fpiutang_nobukti."'";
 					$rs = $this->db->query($sql);
 					
-					$sql="SELECT fpiutang_nobukti, fpiutang_cara, jtunai_nilai AS bayar_nilai
+					$sql="SELECT fpiutang_nobukti, fhutang_cara, jtunai_nilai AS bayar_nilai
 						FROM master_faktur_lunas_piutang
 							LEFT JOIN jual_tunai ON(jtunai_ref=fpiutang_nobukti)
 						WHERE fhutang_id='".$fhutang_id."' LIMIT 0,1";
@@ -727,11 +727,11 @@ class M_master_lunas_hutang extends Model{
 					}else{
 						return NULL;
 					}
-				}elseif($record->fpiutang_cara == 'kwitansi'){
+				}elseif($record->fhutang_cara == 'kwitansi'){
 					$sql = "SELECT jkwitansi_id FROM jual_kwitansi WHERE jkwitansi_ref='".$fpiutang_nobukti."'";
 					$rs = $this->db->query($sql);
 					
-					$sql="SELECT fpiutang_nobukti, fpiutang_cara, jkwitansi_nilai AS bayar_nilai
+					$sql="SELECT fpiutang_nobukti, fhutang_cara, jkwitansi_nilai AS bayar_nilai
 						FROM master_faktur_lunas_piutang
 							LEFT JOIN jual_kwitansi ON(jkwitansi_ref=fpiutang_nobukti)
 						WHERE fhutang_id='".$fhutang_id."' LIMIT 0,1";
@@ -741,11 +741,11 @@ class M_master_lunas_hutang extends Model{
 					}else{
 						return NULL;
 					}
-				}elseif($record->fpiutang_cara == 'card'){
+				}elseif($record->fhutang_cara == 'card'){
 					$sql = "SELECT jcard_id FROM jual_card WHERE jcard_ref='".$fpiutang_nobukti."'";
 					$rs = $this->db->query($sql);
 					
-					$sql="SELECT fpiutang_nobukti, fpiutang_cara, jcard_nilai AS bayar_nilai
+					$sql="SELECT fpiutang_nobukti, fhutang_cara, jcard_nilai AS bayar_nilai
 						FROM master_faktur_lunas_piutang
 							LEFT JOIN jual_card ON(jcard_ref=fpiutang_nobukti)
 						WHERE fhutang_id='".$fhutang_id."' LIMIT 0,1";
@@ -755,11 +755,11 @@ class M_master_lunas_hutang extends Model{
 					}else{
 						return NULL;
 					}
-				}elseif($record->fpiutang_cara == 'cek/giro'){
+				}elseif($record->fhutang_cara == 'cek/giro'){
 					$sql = "SELECT jcek_id FROM jual_cek WHERE jcek_ref='".$fpiutang_nobukti."'";
 					$rs = $this->db->query($sql);
 					
-					$sql="SELECT fpiutang_nobukti, fpiutang_cara, jcek_nilai AS bayar_nilai
+					$sql="SELECT fpiutang_nobukti, fhutang_cara, jcek_nilai AS bayar_nilai
 						FROM master_faktur_lunas_piutang
 							LEFT JOIN jual_cek ON(jcek_ref=fpiutang_nobukti)
 						WHERE fhutang_id='".$fhutang_id."' LIMIT 0,1";
@@ -769,11 +769,11 @@ class M_master_lunas_hutang extends Model{
 					}else{
 						return NULL;
 					}
-				}elseif($record->fpiutang_cara == 'transfer'){
+				}elseif($record->fhutang_cara == 'transfer'){
 					$sql = "SELECT jtransfer_id FROM jual_transfer WHERE jtransfer_ref='".$fpiutang_nobukti."'";
 					$rs = $this->db->query($sql);
 					
-					$sql="SELECT fpiutang_nobukti, fpiutang_cara, jtransfer_nilai AS bayar_nilai
+					$sql="SELECT fpiutang_nobukti, fhutang_cara, jtransfer_nilai AS bayar_nilai
 						FROM master_faktur_lunas_piutang
 							LEFT JOIN jual_transfer ON(jtransfer_ref=fpiutang_nobukti)
 						WHERE fhutang_id='".$fhutang_id."' LIMIT 0,1";
@@ -792,13 +792,13 @@ class M_master_lunas_hutang extends Model{
 		}
 	}
 	
-	function master_lunas_hutang_batal($fhutang_id, $fpiutang_tanggal){
+	function master_lunas_hutang_batal($fhutang_id, $fhutang_tanggal){
 		$date = date('Y-m-d');
 		$date_1 = '01';
 		$date_2 = '02';
 		$date_3 = '03';
-		$month = substr($fpiutang_tanggal,5,2);
-		$year = substr($fpiutang_tanggal,0,4);
+		$month = substr($fhutang_tanggal,5,2);
+		$year = substr($fhutang_tanggal,0,4);
 		$begin=mktime(0,0,0,$month,1,$year);
 		$nextmonth=strtotime("+3month",$begin);
 		
@@ -821,7 +821,7 @@ class M_master_lunas_hutang extends Model{
 		$this->db->query('UNLOCK TABLES');
 		if($rs>0){
 			/*update db.master_lunas_piutang.lpiutang_sisa*/
-			$sql = "SELECT dpiutang_master, fpiutang_nobukti, fpiutang_cara
+			$sql = "SELECT dpiutang_master, fpiutang_nobukti, fhutang_cara
 				FROM detail_lunas_piutang
 					LEFT JOIN master_faktur_lunas_piutang ON(fpiutang_nobukti=dpiutang_nobukti)
 				WHERE fhutang_id='".$fhutang_id."'";
@@ -829,24 +829,24 @@ class M_master_lunas_hutang extends Model{
 			if($rs->num_rows()>0){
 				$record = $rs->row_array();
 				$fpiutang_nobukti = $record['fpiutang_nobukti'];
-				$fpiutang_cara = $record['fpiutang_cara'];
+				$fhutang_cara = $record['fhutang_cara'];
 				
-				if($fpiutang_cara=='card'){
+				if($fhutang_cara=='card'){
 					$sql = "UPDATE jual_card
 						SET jcard_stat_dok='Batal'
 						WHERE jcard_ref='".$fpiutang_nobukti."'";
 					$this->db->query($sql);
-				}elseif($fpiutang_cara=='cek/giro'){
+				}elseif($fhutang_cara=='cek/giro'){
 					$sql = "UPDATE jual_cek
 						SET jcek_stat_dok='Batal'
 						WHERE jcek_ref='".$fpiutang_nobukti."'";
 					$this->db->query($sql);
-				}elseif($fpiutang_cara=='transfer'){
+				}elseif($fhutang_cara=='transfer'){
 					$sql = "UPDATE jual_transfer
 						SET jtransfer_stat_dok='Batal'
 						WHERE jtransfer_ref='".$fpiutang_nobukti."'";
 					$this->db->query($sql);
-				}elseif($fpiutang_cara=='tunai'){
+				}elseif($fhutang_cara=='tunai'){
 					$sql = "UPDATE jual_tunai
 						SET jtunai_stat_dok='Batal'
 						WHERE jtunai_ref='".$fpiutang_nobukti."'";
