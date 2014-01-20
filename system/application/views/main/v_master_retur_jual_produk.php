@@ -1961,12 +1961,10 @@ Ext.onReady(function(){
 		if(btn=='yes'){
             var selections = detail_retur_jual_produkListEditorGrid.getSelectionModel().getSelections();
 			for(var i = 0, record; record = selections[i]; i++){
-                if(record.data.dproduk_id==''){
+                if(record.data.drproduk_id==''){
                     detail_retur_jual_produk_DataStore.remove(record);
-					// load_dstore_jproduk();
 					refresh_detail_retur_jual_produk();
                 }else if((/^\d+$/.test(record.data.drproduk_id))){
-                    //Delete dari db.detail_jual_produk
                     Ext.MessageBox.show({
                         title: 'Please wait',
                         msg: 'Loading items...',
