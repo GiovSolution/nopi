@@ -578,6 +578,8 @@ class M_master_retur_jual_produk extends Model{
 		function master_retur_jual_produk_update($rproduk_cetak, $rproduk_id ,$rproduk_nobukti ,$rproduk_nobuktijual ,$rproduk_cust ,$rproduk_tanggal ,$rproduk_keterangan , $rproduk_stat_dok, 
 			$array_drproduk_id, $array_drproduk_produk, $array_drproduk_satuan, $array_drproduk_jumlah, $array_drproduk_harga, $array_drproduk_diskon, $array_sales_id){
 			
+			$datetime_now = date('Y-m-d : H:i:s');
+
 			$sql_check_locked = "SELECT * from master_retur_jual_produk where rproduk_id = '".$rproduk_id."'";
 			$rs_check_locked = $this->db->query($sql_check_locked);
 			if($rs_check_locked->num_rows()>0){
@@ -600,7 +602,8 @@ class M_master_retur_jual_produk extends Model{
 				//"rproduk_nobuktijual"=>$rproduk_nobuktijual, 
 				//"rproduk_cust"=>$rproduk_cust, 
 				"rproduk_tanggal"=>$rproduk_tanggal, 
-				"rproduk_keterangan"=>$rproduk_keterangan
+				"rproduk_keterangan"=>$rproduk_keterangan,
+				"rproduk_date_update"=>$datetime_now
 				// "rproduk_stat_dok"=>$rproduk_stat_dok
 			);
 
