@@ -99,7 +99,9 @@ Ext.onReady(function(){
 			{name: 'harga', type: 'float', mapping: 'harga'},
 			{name: 'subtotal', type: 'float', mapping: 'subtotal'},
 			{name: 'diskon', type: 'int', mapping: 'diskon'},
-			{name: 'kode_transaksi', type: 'string', mapping: 'kode_transaksi'}
+			{name: 'diskon2', type: 'int', mapping: 'diskon2'},
+			{name: 'kode_transaksi', type: 'string', mapping: 'kode_transaksi'},
+			{name: 'kategori_produk', type: 'string', mapping: 'kategori_produk'}
 		]),
 		sortInfo:{field: 'supplier_id', direction: "ASC"}
 	});
@@ -171,7 +173,13 @@ Ext.onReady(function(){
 			sortable: true,
 			readOnly: true
 		}, 
-		
+		{
+			header: '<div align="center">Kategori Produk</div>',
+			dataIndex: 'kategori_produk',
+			width: 50,
+			sortable: true,
+			readOnly: true
+		}, 
 		{
 			header: '<div align="center">Jumlah</div>',
 			dataIndex: 'jumlah_transaksi',
@@ -196,7 +204,13 @@ Ext.onReady(function(){
 			width: 80,
 			sortable: false
 		},
-
+		{
+			align : 'Right',
+			header: '<div align="center">' + 'Disk 2' + '</div>',
+			dataIndex: 'diskon2',
+			width: 80,
+			sortable: false
+		},
 		{
 			align : 'Right',
 			header: '<div align="center">' + 'Sub Total' + '</div>',

@@ -23,7 +23,7 @@ class M_history_transaksi_supplier extends Model{
 								detail_jual_rawat.drawat_jumlah AS jumlah_transaksi,
 								IF((dtrawat_petugas1=0),IF((dtrawat_petugas2=0),NULL,terapis.karyawan_username),dokter.karyawan_username) AS referal,
 								perawatan.rawat_kode AS kode_transaksi, perawatan.rawat_nama,
-								concat('Penjualan Perawatan ', perawatan.rawat_nama) as keterangan
+								concat('Penjualan Perawatan ', perawatan.rawat_nama) as keterangan,
 						FROM detail_jual_rawat
 						LEFT OUTER JOIN master_jual_rawat ON master_jual_rawat.jrawat_id = detail_jual_rawat.drawat_master
 						LEFT OUTER JOIN customer ON master_jual_rawat.jrawat_cust = customer.cust_id
@@ -62,16 +62,19 @@ class M_history_transaksi_supplier extends Model{
 							detail_order_beli.dorder_jumlah as jumlah_transaksi, 
 							detail_order_beli.dorder_harga as harga,
 							detail_order_beli.dorder_diskon as diskon,
+							detail_order_beli.dorder_diskon as diskon2,
 
 							(((`detail_order_beli`.`dorder_jumlah` * `detail_order_beli`.`dorder_harga`) * (100 - `detail_order_beli`.`dorder_diskon`)) / 100) as subtotal,
-
+							//kurang
 							produk.produk_kode AS kode_transaksi, 
+							kategori.kategori_kode AS kategori_produk,
 							produk.produk_nama,
 							concat('Pembelian Produk ', produk.produk_nama) as keterangan
 						FROM detail_order_beli
 						LEFT OUTER JOIN master_order_beli ON master_order_beli.order_id = detail_order_beli.dorder_master
 						LEFT OUTER JOIN supplier ON master_order_beli.order_supplier = supplier.supplier_id
-						LEFT OUTER JOIN produk ON detail_order_beli.dorder_produk = produk.produk_id";
+						LEFT OUTER JOIN produk ON detail_order_beli.dorder_produk = produk.produk_id
+						LEFT OUTER JOIN kategori ON produk.produk_kategori = kategori.kategori_id";
 			
 				if($supplier_id!=''){
 					$query.=eregi("WHERE",$query)?" AND ":" WHERE ";
