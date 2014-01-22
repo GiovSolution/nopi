@@ -63,9 +63,7 @@ class M_history_transaksi_supplier extends Model{
 							detail_order_beli.dorder_harga as harga,
 							detail_order_beli.dorder_diskon as diskon,
 							detail_order_beli.dorder_diskon as diskon2,
-
 							(((`detail_order_beli`.`dorder_jumlah` * `detail_order_beli`.`dorder_harga`) * (100 - `detail_order_beli`.`dorder_diskon`)) / 100) as subtotal,
-							//kurang
 							produk.produk_kode AS kode_transaksi, 
 							kategori.kategori_kode AS kategori_produk,
 							produk.produk_nama,
