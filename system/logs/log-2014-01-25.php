@@ -1,0 +1,37 @@
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed'); ?>
+
+ERROR - 2014-01-25 11:33:04 --> Severity: Notice  --> Undefined index:  satuan /Applications/MAMP/htdocs/nopi/system/application/controllers/c_hpp.php 33
+ERROR - 2014-01-25 11:33:11 --> Severity: Notice  --> Undefined index:  query /Applications/MAMP/htdocs/nopi/system/application/controllers/c_kartu_stok.php 53
+ERROR - 2014-01-25 11:33:11 --> Severity: Notice  --> Undefined index:  start /Applications/MAMP/htdocs/nopi/system/application/controllers/c_kartu_stok.php 54
+ERROR - 2014-01-25 11:33:11 --> Severity: Notice  --> Undefined index:  limit /Applications/MAMP/htdocs/nopi/system/application/controllers/c_kartu_stok.php 55
+ERROR - 2014-01-25 11:33:12 --> Severity: Notice  --> Undefined index:  query /Applications/MAMP/htdocs/nopi/system/application/controllers/c_kartu_stok.php 96
+ERROR - 2014-01-25 11:33:12 --> Severity: Notice  --> Undefined index:  start /Applications/MAMP/htdocs/nopi/system/application/controllers/c_kartu_stok.php 97
+ERROR - 2014-01-25 11:33:12 --> Severity: Notice  --> Undefined index:  limit /Applications/MAMP/htdocs/nopi/system/application/controllers/c_kartu_stok.php 98
+ERROR - 2014-01-25 11:43:41 --> Severity: Notice  --> Undefined index:  satuan /Applications/MAMP/htdocs/nopi/system/application/controllers/c_hpp.php 33
+ERROR - 2014-01-25 11:43:46 --> Severity: Notice  --> Undefined index:  query /Applications/MAMP/htdocs/nopi/system/application/controllers/c_kartu_stok.php 53
+ERROR - 2014-01-25 11:43:46 --> Severity: Notice  --> Undefined index:  start /Applications/MAMP/htdocs/nopi/system/application/controllers/c_kartu_stok.php 54
+ERROR - 2014-01-25 11:43:46 --> Severity: Notice  --> Undefined index:  limit /Applications/MAMP/htdocs/nopi/system/application/controllers/c_kartu_stok.php 55
+ERROR - 2014-01-25 11:43:46 --> Severity: Notice  --> Undefined index:  query /Applications/MAMP/htdocs/nopi/system/application/controllers/c_kartu_stok.php 96
+ERROR - 2014-01-25 11:43:46 --> Severity: Notice  --> Undefined index:  start /Applications/MAMP/htdocs/nopi/system/application/controllers/c_kartu_stok.php 97
+ERROR - 2014-01-25 11:43:46 --> Severity: Notice  --> Undefined index:  limit /Applications/MAMP/htdocs/nopi/system/application/controllers/c_kartu_stok.php 98
+ERROR - 2014-01-25 11:45:41 --> Severity: Notice  --> Undefined index:  satuan /Applications/MAMP/htdocs/nopi/system/application/controllers/c_hpp.php 33
+ERROR - 2014-01-25 11:45:45 --> Severity: Notice  --> Undefined index:  query /Applications/MAMP/htdocs/nopi/system/application/controllers/c_kartu_stok.php 53
+ERROR - 2014-01-25 11:45:45 --> Severity: Notice  --> Undefined index:  start /Applications/MAMP/htdocs/nopi/system/application/controllers/c_kartu_stok.php 54
+ERROR - 2014-01-25 11:45:45 --> Severity: Notice  --> Undefined index:  limit /Applications/MAMP/htdocs/nopi/system/application/controllers/c_kartu_stok.php 55
+ERROR - 2014-01-25 11:45:45 --> Severity: Notice  --> Undefined index:  query /Applications/MAMP/htdocs/nopi/system/application/controllers/c_kartu_stok.php 96
+ERROR - 2014-01-25 11:45:45 --> Severity: Notice  --> Undefined index:  start /Applications/MAMP/htdocs/nopi/system/application/controllers/c_kartu_stok.php 97
+ERROR - 2014-01-25 11:45:45 --> Severity: Notice  --> Undefined index:  limit /Applications/MAMP/htdocs/nopi/system/application/controllers/c_kartu_stok.php 98
+ERROR - 2014-01-25 11:48:04 --> Severity: Notice  --> Undefined index:  satuan /Applications/MAMP/htdocs/nopi/system/application/controllers/c_hpp.php 33
+ERROR - 2014-01-25 11:48:08 --> Severity: Notice  --> Undefined index:  query /Applications/MAMP/htdocs/nopi/system/application/controllers/c_kartu_stok.php 53
+ERROR - 2014-01-25 11:48:08 --> Severity: Notice  --> Undefined index:  start /Applications/MAMP/htdocs/nopi/system/application/controllers/c_kartu_stok.php 54
+ERROR - 2014-01-25 11:48:08 --> Severity: Notice  --> Undefined index:  limit /Applications/MAMP/htdocs/nopi/system/application/controllers/c_kartu_stok.php 55
+ERROR - 2014-01-25 11:48:08 --> Severity: Notice  --> Undefined index:  query /Applications/MAMP/htdocs/nopi/system/application/controllers/c_kartu_stok.php 96
+ERROR - 2014-01-25 11:48:08 --> Severity: Notice  --> Undefined index:  start /Applications/MAMP/htdocs/nopi/system/application/controllers/c_kartu_stok.php 97
+ERROR - 2014-01-25 11:48:08 --> Severity: Notice  --> Undefined index:  limit /Applications/MAMP/htdocs/nopi/system/application/controllers/c_kartu_stok.php 98
+ERROR - 2014-01-25 11:50:41 --> Severity: Notice  --> Undefined index:  satuan /Applications/MAMP/htdocs/nopi/system/application/controllers/c_hpp.php 33
+ERROR - 2014-01-25 11:50:44 --> Severity: Notice  --> Undefined index:  query /Applications/MAMP/htdocs/nopi/system/application/controllers/c_kartu_stok.php 53
+ERROR - 2014-01-25 11:50:44 --> Severity: Notice  --> Undefined index:  start /Applications/MAMP/htdocs/nopi/system/application/controllers/c_kartu_stok.php 54
+ERROR - 2014-01-25 11:50:44 --> Severity: Notice  --> Undefined index:  limit /Applications/MAMP/htdocs/nopi/system/application/controllers/c_kartu_stok.php 55
+ERROR - 2014-01-25 11:50:45 --> Severity: Notice  --> Undefined index:  query /Applications/MAMP/htdocs/nopi/system/application/controllers/c_kartu_stok.php 96
+ERROR - 2014-01-25 11:50:45 --> Severity: Notice  --> Undefined index:  start /Applications/MAMP/htdocs/nopi/system/application/controllers/c_kartu_stok.php 97
+ERROR - 2014-01-25 11:50:45 --> Severity: Notice  --> Undefined index:  limit /Applications/MAMP/htdocs/nopi/system/application/controllers/c_kartu_stok.php 98

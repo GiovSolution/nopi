@@ -1,14 +1,6 @@
 <?php
-/* 	These code was generated using phpCIGen v 0.1.b (24/06/2009)
-	#zaqi 		zaqi.smart@gmail.com,http://zenzaqi.blogspot.com, 
-	#CV. Trust Solution, jl. Saronojiwo 19 Surabaya, http://www.ts.co.id
-	
-	+ Module  		: kartu_stok View
-	+ Description	: For record view
-	+ Filename 		: v_kartu_stok.php
- 	+ creator  		: 
- 	+ Created on 09/Apr/2010 10:47:15
-	
+/* 
+	GIOV Solution - Keep IT Simple
 */
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -277,6 +269,7 @@ Ext.onReady(function(){
 		name: 'kartu_stok_produkField',
 		fieldLabel: '<b>Produk</b>',
 		width: 200,
+		disabled : true,
 		readOnly: true
 	});
 	
@@ -284,6 +277,7 @@ Ext.onReady(function(){
 		id: 'kartu_stok_satuanField',
 		name: 'kartu_stok_satuanField',
 		fieldLabel: '<b>Satuan</b>',
+		disabled : true,
 		width: 75,
 		readOnly: true
 	});
@@ -316,7 +310,8 @@ Ext.onReady(function(){
 		valueRenderer: 'numberToCurrency',
 		itemCls: 'rmoney',
 		readOnly: true,
-		width: 60
+		disabled :true,
+		width: 50
 	});
 	total_pembelianField=new Ext.form.TextField({
 		id: 'total_pembelianField',
@@ -325,7 +320,8 @@ Ext.onReady(function(){
 		valueRenderer: 'numberToCurrency',
 		itemCls: 'rmoney',
 		readOnly: true,
-		width: 60
+		disabled :true,
+		width: 50
 	});
 	total_retur_penjualanField=new Ext.form.TextField({
 		id: 'total_retur_penjualanField',
@@ -334,7 +330,8 @@ Ext.onReady(function(){
 		valueRenderer: 'numberToCurrency',
 		itemCls: 'rmoney',
 		readOnly: true,
-		width: 60
+		disabled :true,
+		width: 50
 	});
 	total_retur_pembelianField=new Ext.form.TextField({
 		id: 'total_retur_pembelianField',
@@ -343,7 +340,8 @@ Ext.onReady(function(){
 		valueRenderer: 'numberToCurrency',
 		itemCls: 'rmoney',
 		readOnly: true,
-		width: 60
+		disabled :true,
+		width: 50
 	});
 	
 	kartu_stok_masterField=new Ext.form.FieldSet({
@@ -385,37 +383,22 @@ Ext.onReady(function(){
 			displayInfo: true
 		}),
 		{
-			'text':'Stok Awal'
+			width : 200,
+			disabled : true
 		},
 		{
-			'text':':'
+			'text' : '<span style="color:white;"> <font size=4> <b>Stok Awal</b></span>',
+			disabled : true
 		},
 		kartu_stok_awalField,
 		{
-			'text':'Stok Akhir'
-		},
-		{
-			'text':':'
+			'text' : '<span style="color:white;"> <font size=4> <b>Stok Akhir</b></span>',
+			disabled : true
 		},
 		kartu_stok_saldoField,
 		
 		],tbar: [
-		{
-			'text':'Produk'
-		},
-		{
-			'text':':'
-		},
-		
-		kartu_stok_produkField,
-		{
-			'text':'Satuan'
-		},
-		{
-			'text':':'
-		},
-		kartu_stok_satuanField
-		,
+
 		{
 			text: 'Search',
 			tooltip: 'Advanced Search',
@@ -424,31 +407,36 @@ Ext.onReady(function(){
 		},
 		'-',
 		{
-			'text':'Jml Nota Penj'
+			'text' : '<span style="color:white;"> <font size=4> <b>Produk</b></span>',
+			disabled : true
 		},
+		kartu_stok_produkField,
 		{
-			'text':':'
+			'text' : '<span style="color:white;"> <font size=4> <b>Satuan</b></span>',
+			disabled : true
+		},
+		kartu_stok_satuanField
+		,
+		
+		'-',
+		{
+			'text' : '<span style="color:white;"> <font size=2> <b>Jml Nota Penj</b></span>',
+			disabled : true
 		},
 		total_penjualanField,
 		{
-			'text':'Jml Nota Pemb'
-		},
-		{
-			'text':':'
+			'text' : '<span style="color:white;"> <font size=2> <b>Jml Nota Pemb</b></span>',
+			disabled : true
 		},
 		total_pembelianField,
 		{
-			'text':'Jml Nota Retur Penj'
-		},
-		{
-			'text':':'
+			'text' : '<span style="color:white;"> <font size=2> <b>Jml Nota Retur Penj</b></span>',
+			disabled : true
 		},
 		total_retur_penjualanField,
 		{
-			'text':'Jml Nota Retur Pemb'
-		},
-		{
-			'text':':'
+			'text' : '<span style="color:white;"> <font size=2> <b>Jml Nota Retur Pemb</b></span>',
+			disabled : true
 		},
 		total_retur_pembelianField,]/*'-',{
 			text: 'Refresh',

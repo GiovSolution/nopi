@@ -1,13 +1,6 @@
 <?php
-/* 	These code was generated using phpCIGen v 0.1.b (21/04/2009)
-	#zaqi 		zaqi.smart@gmail.com,http://zenzaqi.blogspot.com, 
-	
-	+ Module  		: kartu_stok Controller
-	+ Description	: For record controller process back-end
-	+ Filename 		: C_kartu_stok.php
- 	+ creator 		: 
- 	+ Created on 09/Apr/2010 10:47:15
-	
+/* 		
+	GIOV Solution - Keep IT Simple
 */
 
 //class of kartu_stok

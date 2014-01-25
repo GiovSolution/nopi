@@ -1,13 +1,5 @@
-<? /* 	These code was generated using phpCIGen v 0.1.a (21/04/2009)
-	#zaqi 		zaqi.smart@gmail.com,http://zenzaqi.blogspot.com,
-    #songbee	mukhlisona@gmail.com
-	#CV. Trust Solution, jl. Saronojiwo 19 Surabaya, http://www.ts.co.id
-
-	+ Module  		: kartu_stok Model
-	+ Description	: For record model process back-end
-	+ Filename 		: c_kartu_stok.php
- 	+ creator 		:
- 	+ Created on 09/Apr/2010 10:47:15
+<? /* 	
+	GIOV Solution - Keep IT Simple
 */
 
 class M_kartu_stok extends Model{
@@ -1095,14 +1087,6 @@ class M_kartu_stok extends Model{
 					kartu_stok_fix.ks_produk_id = '".$produk_id."'
 					".$isiperiode."";
 			
-			// SISTEM STOK LAMA
-			/*
-			$sql="SELECT * from kartu_stok
-				  	WHERE gudang_id='".$gudang."'
-				  	AND produk_id='".$produk_id."'
-				 	".$isiperiode."
-					ORDER BY tanggal ASC";
-			*/
 			$result = $this->db->query($sql);
 			$nbrows = $result->num_rows();
 			$limit = $sql." LIMIT ".$start.",".$end;
