@@ -61,19 +61,19 @@ class M_master_lunas_piutang extends Model{
 					(
 						select sum(master_faktur_lunas_piutang.fpiutang_bayar) from master_faktur_lunas_piutang
 						where master_faktur_lunas_piutang.fpiutang_cust = master_lunas_piutang.lpiutang_cust
-						and master_faktur_lunas_piutang.fpiutang_cara = 'cek/giro'
+						and master_faktur_lunas_piutang.fpiutang_cara = 'cek/giro' and fpiutang_stat_dok == 'Tertutup'
 						
 					) AS piutang_cek,
 					(
 						select sum(master_faktur_lunas_piutang.fpiutang_bayar) from master_faktur_lunas_piutang
 						where master_faktur_lunas_piutang.fpiutang_cust = master_lunas_piutang.lpiutang_cust
-						and master_faktur_lunas_piutang.fpiutang_cara = 'transfer'
+						and master_faktur_lunas_piutang.fpiutang_cara = 'transfer' and fpiutang_stat_dok == 'Tertutup'
 						
 					) AS piutang_transfer,
 					(
 						select sum(master_faktur_lunas_piutang.fpiutang_bayar) from master_faktur_lunas_piutang
 						where master_faktur_lunas_piutang.fpiutang_cust = master_lunas_piutang.lpiutang_cust
-						and master_faktur_lunas_piutang.fpiutang_cara = 'card'
+						and master_faktur_lunas_piutang.fpiutang_cara = 'card' and fpiutang_stat_dok == 'Tertutup'
 						
 					) AS piutang_card,
 					(

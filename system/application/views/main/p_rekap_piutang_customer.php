@@ -15,14 +15,14 @@
 	<caption>Laporan Rekap Piutang <br/><?php echo $periode; ?> <br/>Group By  Customer</caption>
 	<thead>
        	<tr>
-        	<th rowspan="2" scope='col'>No</th>
-            <th rowspan="2" scope='col'>Customer</th>           
+        	<th rowspan="2" scope='col'>No &nbsp; &nbsp;</th>
+            <th rowspan="2" scope='col'>Customer &nbsp;&nbsp;</th>           
             <? //<th rowspan="2" scope='col'>Tanggal</th> ?>
-			<th rowspan="2" scope='col'>Saldo Awal (Rp)</th>
-			<th rowspan="2" scope='col'>Piutang (Rp)</th>
-			<th rowspan="2" scope='col'>Retur (Rp)</th>
-            <th colspan="3" scope='col' align="center">Pelunasan</th>
-            <th rowspan="2" scope='col'>Saldo Akhir (Rp)</th>
+			<th rowspan="2" scope='col'>Saldo Awal (Rp) &nbsp;&nbsp;</th>
+			<th rowspan="2" scope='col'>Piutang (Rp) &nbsp;&nbsp;</th>
+			<th rowspan="2" scope='col'>Retur (Rp)&nbsp;&nbsp;</th>
+            <th colspan="3" scope='col' align="center">Pelunasan &nbsp;&nbsp;</th>
+            <th rowspan="2" scope='col'>Saldo Akhir (Rp) &nbsp;&nbsp;</th>
         </tr>
     	<tr>
     	  <th scope='col'>Tunai</th>

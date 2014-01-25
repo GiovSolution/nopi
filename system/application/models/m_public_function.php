@@ -2604,7 +2604,7 @@ group by master_retur_jual_produk.rproduk_cust),0)
 			FROM master_lunas_piutang 
 	
 				LEFT JOIN customer ON(cust_id=master_lunas_piutang.lpiutang_cust)
-				WHERE master_lunas_piutang.lpiutang_stat_dok <> 'Batal' ";
+				WHERE master_lunas_piutang.lpiutang_stat_dok <> 'Batal' and master_lunas_piutang.lpiutang_faktur_tanggal >= '2014-01-01'";
 		
 		if($query<>""){
 			$sql .=eregi("WHERE",$sql)? " AND ":" WHERE ";
