@@ -113,7 +113,14 @@ Ext.onReady(function(){
 			id: 'stok_tanggal'
 		},[
 			{name: 'stok_tanggal', type: 'date', dateFormat: 'Y-m-d', mapping: 'tanggal'}, 
-			{name: 'stok_nobukti', type: 'string', mapping: 'no_bukti'}, 
+			{name: 'stok_nobukti', type: 'string', mapping: 'no_bukti'},
+			{name: 'stok_pelaku', type: 'string', mapping: 'stok_pelaku'},
+			{name: 'total_stok', type: 'float', mapping: 'total_stok'},
+			{name: 'total_penjualan', type: 'float', mapping: 'total_penjualan'},
+			{name: 'total_pembelian', type: 'float', mapping: 'total_pembelian'},
+			{name: 'total_retur_penjualan', type: 'float', mapping: 'total_retur_penjualan'},
+			{name: 'total_retur_pembelian', type: 'float', mapping: 'total_retur_pembelian'},
+			{name: 'stok_harga', type: 'float', mapping: 'stok_harga'},
 			{name: 'stok_keterangan', type: 'string', mapping: 'keterangan'}, 
 			{name: 'stok_masuk', type: 'float', mapping: 'masuk'}, 
 			{name: 'stok_keluar', type: 'float', mapping: 'keluar'}
@@ -177,7 +184,7 @@ Ext.onReady(function(){
 		},[
 			{name: 'produk_id', type: 'int', mapping: 'produk_id'}, 
 			{name: 'produk_kode', type: 'string', mapping: 'produk_kode'}, 
-			{name: 'produk_jenis', type: 'string', mapping: 'produk_jenis'}, 
+			{name: 'produk_jenis', type: 'string', mapping: 'produk_jenis'},
 			{name: 'produk_nama', type: 'string', mapping: 'produk_nama'}, 
 			{name: 'satuan_id', type: 'int', mapping: 'satuan_id'}, 
 			{name: 'satuan_kode', type: 'string', mapping: 'satuan_kode'}, 
@@ -210,7 +217,14 @@ Ext.onReady(function(){
 			width: 150,
 			sortable: true,
 			readOnly: true
-		}, 
+		},
+		{
+			header: '<div align="center">Pelaku</div>',
+			dataIndex: 'stok_pelaku',
+			width: 150,
+			sortable: true,
+			readOnly: true
+		},	
 		{
 			header: '<div align="center">Keterangan</div>',
 			dataIndex: 'stok_keterangan',
@@ -219,6 +233,13 @@ Ext.onReady(function(){
 			//hidden: true,
 			readOnly: true
 		}, 
+		{
+			header: '<div align="center">Harga Satuan</div>',
+			dataIndex: 'stok_harga',
+			width: 150,
+			sortable: true,
+			readOnly: true
+		},	
 		{
 			header: '<div align="center">Masuk</div>',
 			dataIndex: 'stok_masuk',
@@ -255,7 +276,7 @@ Ext.onReady(function(){
 		id: 'kartu_stok_produkField',
 		name: 'kartu_stok_produkField',
 		fieldLabel: '<b>Produk</b>',
-		width: 300,
+		width: 200,
 		readOnly: true
 	});
 	
@@ -263,6 +284,7 @@ Ext.onReady(function(){
 		id: 'kartu_stok_satuanField',
 		name: 'kartu_stok_satuanField',
 		fieldLabel: '<b>Satuan</b>',
+		width: 75,
 		readOnly: true
 	});
 	
@@ -281,6 +303,43 @@ Ext.onReady(function(){
 		id: 'kartu_stok_saldoField',
 		name: 'kartu_stok_saldoField',
 		fieldLabel: '<b>Stok Akhir</b>',
+		valueRenderer: 'numberToCurrency',
+		itemCls: 'rmoney',
+		readOnly: true,
+		width: 60
+	});
+	
+	total_penjualanField=new Ext.form.TextField({
+		id: 'total_penjualanField',
+		name: 'total_penjualanField',
+		fieldLabel: '<b>Penjualan</b>',
+		valueRenderer: 'numberToCurrency',
+		itemCls: 'rmoney',
+		readOnly: true,
+		width: 60
+	});
+	total_pembelianField=new Ext.form.TextField({
+		id: 'total_pembelianField',
+		name: 'total_pembelianField',
+		fieldLabel: '<b>Pembelian</b>',
+		valueRenderer: 'numberToCurrency',
+		itemCls: 'rmoney',
+		readOnly: true,
+		width: 60
+	});
+	total_retur_penjualanField=new Ext.form.TextField({
+		id: 'total_retur_penjualanField',
+		name: 'total_retur_penjualanField',
+		fieldLabel: '<b>Retur Penjualan</b>',
+		valueRenderer: 'numberToCurrency',
+		itemCls: 'rmoney',
+		readOnly: true,
+		width: 60
+	});
+	total_retur_pembelianField=new Ext.form.TextField({
+		id: 'total_retur_pembelianField',
+		name: 'total_retur_pembelianField',
+		fieldLabel: '<b>Retur Pembelian</b>',
 		valueRenderer: 'numberToCurrency',
 		itemCls: 'rmoney',
 		readOnly: true,
@@ -318,13 +377,14 @@ Ext.onReady(function(){
 		frame: true,
 		selModel: new Ext.grid.RowSelectionModel({singleSelect:false}),
 		viewConfig: { forceFit:true },
-	  	width: 900,
+	  	width: 1200,
 		autoHeight: true,
 		bbar: [new Ext.PagingToolbar({
 			pageSize: pageS,
 			store: kartu_stok_DataStore,
 			displayInfo: true
-		}),{
+		}),
+		{
 			'text':'Stok Awal'
 		},
 		{
@@ -337,7 +397,8 @@ Ext.onReady(function(){
 		{
 			'text':':'
 		},
-		kartu_stok_saldoField
+		kartu_stok_saldoField,
+		
 		],tbar: [
 		{
 			'text':'Produk'
@@ -345,6 +406,7 @@ Ext.onReady(function(){
 		{
 			'text':':'
 		},
+		
 		kartu_stok_produkField,
 		{
 			'text':'Satuan'
@@ -359,23 +421,42 @@ Ext.onReady(function(){
 			tooltip: 'Advanced Search',
 			iconCls:'icon-search',
 			handler: display_form_search_window 
-		},/*'-',{
+		},
+		'-',
+		{
+			'text':'Jml Nota Penj'
+		},
+		{
+			'text':':'
+		},
+		total_penjualanField,
+		{
+			'text':'Jml Nota Pemb'
+		},
+		{
+			'text':':'
+		},
+		total_pembelianField,
+		{
+			'text':'Jml Nota Retur Penj'
+		},
+		{
+			'text':':'
+		},
+		total_retur_penjualanField,
+		{
+			'text':'Jml Nota Retur Pemb'
+		},
+		{
+			'text':':'
+		},
+		total_retur_pembelianField,]/*'-',{
 			text: 'Refresh',
 			tooltip: 'Refresh datagrid',
 			handler: kartu_stok_reset_search,
 			iconCls:'icon-refresh'
 		}*/
-		'-',{
-			text: 'Export Excel',
-			tooltip: 'Export to Excel(.xls) Document',
-			iconCls:'icon-xls',
-			handler: kartu_stok_export_excel
-		}, '-',{
-			text: 'Print',
-			tooltip: 'Print Document',
-			iconCls:'icon-print',
-			handler: kartu_stok_print  
-		}]
+		
 	});
 	
 	kartu_stokListEditorGrid.render();
@@ -539,23 +620,38 @@ Ext.onReady(function(){
 												var stok_awal=0;
 												var stok_masuk=0;
 												var stok_keluar=0;
-																							
+												var total_penjualan=0;
+												var total_pembelian=0;
+												var total_retur_penjualan=0;
+												var total_retur_pembelian=0;
+																			
 												var data_awal=kartu_stok_awal_DataStore.getAt(0);
 												var data_resume=kartu_stok_resume_DataStore.getAt(0);
+												var total_stok = kartu_stok_DataStore.getAt(0);
 												
 												stok_awal=rounding(data_awal.data.stok_awal,2);
 												stok_masuk=rounding(data_resume.data.stok_masuk,2);
 												stok_keluar=rounding(data_resume.data.stok_keluar,2);
 												
+												if(total_stok!=null)
+												{
+													total_penjualan=rounding(total_stok.data.total_penjualan,2);
+													total_pembelian=rounding(total_stok.data.total_pembelian,2);
+													total_retur_penjualan=rounding(total_stok.data.total_retur_penjualan,2);
+													total_retur_pembelian=rounding(total_stok.data.total_retur_pembelian,2);
+												}
 												//kartu_stok_awalField.setValue(CurrencyFormatted(stok_awal));
 												kartu_stok_awalField.setValue(stok_awal);
 												stok_akhir=rounding((stok_awal+stok_masuk-stok_keluar),2);
 										
 												//kartu_stok_saldoField.setValue(CurrencyFormatted(stok_akhir));
 												kartu_stok_saldoField.setValue(stok_akhir);
+												total_penjualanField.setValue(total_penjualan);
+												total_pembelianField.setValue(total_pembelian);
+												total_retur_penjualanField.setValue(total_retur_penjualan);
+												total_retur_pembelianField.setValue(total_retur_pembelian);
 												Ext.MessageBox.hide(); 
 												kartu_stok_searchWindow.hide();
-												
 											}
 										}
 										});

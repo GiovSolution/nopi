@@ -35,7 +35,7 @@ class M_master_lunas_piutang extends Model{
 		
 		//$sql="SELECT * FROM vu_trans_piutang WHERE tanggal > '2010-07-20' AND lpiutang_sisa>0 AND lpiutang_stat_dok='Terbuka' ".$order_by;
 		if($opsi=='rekap'){
-			$order_by=" GROUP BY master_lunas_piutang.lpiutang_cust ORDER BY cust_id";
+			$order_by=" GROUP BY master_lunas_piutang.lpiutang_cust ORDER BY cust_nama ASC";
 			if($periode=='all')
 			/*	
 				$sql="SELECT vu_trans_piutang.*,
@@ -55,7 +55,7 @@ class M_master_lunas_piutang extends Model{
 					(
 						select sum(master_faktur_lunas_piutang.fpiutang_bayar) from master_faktur_lunas_piutang
 						where master_faktur_lunas_piutang.fpiutang_cust = master_lunas_piutang.lpiutang_cust
-						and master_faktur_lunas_piutang.fpiutang_cara = 'tunai'
+						and master_faktur_lunas_piutang.fpiutang_cara = 'tunai' and fpiutang_stat_dok == 'Tertutup'
 						
 					) AS piutang_tunai,
 					(

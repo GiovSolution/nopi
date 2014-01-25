@@ -786,12 +786,12 @@ Ext.onReady(function(){
 		else if(status_awal =='Tertutup' && fpiutang_stat_dokField.getValue()=='Terbuka')
 		{
 		Ext.MessageBox.show({
-			msg: 'Status yang sudah Tertutup tidak dapat diganti Terbuka',
+			msg: 'Faktur ini sudah pernah di Save and Print sebelumnya, klik Save dahulu di kanan bawah agar Status Dok menjadi Terbuka',
 			buttons: Ext.MessageBox.OK,
 			animEl: 'save',
 			icon: Ext.MessageBox.WARNING
 		   });
-		fpiutang_stat_dokField.setValue('Tertutup');
+		fpiutang_stat_dokField.setValue('Terbuka');
 		}
 		
 		else if(status_awal =='Batal' && fpiutang_stat_dokField.getValue()=='Terbuka')
@@ -872,8 +872,8 @@ Ext.onReady(function(){
 			detail_fpiutang_bDel.setDisabled(true);
 			
 			dcbo_fjual_piutang.setDisabled(true);
-			dfpiutang_sisaField.setDisabled(true);
-			dfpiutang_bayarField.setDisabled(true);
+			dfpiutang_sisaField.setDisabled(false);
+			dfpiutang_bayarField.setDisabled(false);
 			dfpiutang_ketField.setDisabled(true);
 		}
 		if(fpiutang_post2db=="UPDATE" && master_lunas_piutangListEditorGrid.getSelectionModel().getSelected().get('fpiutang_stat_dok')=="Batal"){
@@ -893,8 +893,8 @@ Ext.onReady(function(){
 			detail_fpiutang_bDel.setDisabled(true);
 			
 			dcbo_fjual_piutang.setDisabled(true);
-			dfpiutang_sisaField.setDisabled(true);
-			dfpiutang_bayarField.setDisabled(true);
+			dfpiutang_sisaField.setDisabled(false);
+			dfpiutang_bayarField.setDisabled(false);
 			dfpiutang_ketField.setDisabled(true);
 			
 			<?php if(eregi('U|C',$this->m_security->get_access_group_by_kode('MENU_LUNASPIUTANG'))){ ?>

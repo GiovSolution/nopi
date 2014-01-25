@@ -1048,12 +1048,32 @@ class M_kartu_stok extends Model{
 
 			}
 			// EOF CEK SATUAN
-
-			$sql="SELECT 
+			$sql="";
+			$sql="SELECT
+					(SELECT count(*) as total_penjualan from kartu_stok_fix where ks_keterangan = 'jual_produk' and ks_gudang_id='".$gudang."' and
+					ks_produk_id = '".$produk_id."'
+					".$isiperiode.") AS total_penjualan, 
+					(SELECT count(*) as total_pembelian from kartu_stok_fix where ks_keterangan = 'order_beli' and ks_gudang_id='".$gudang."' and
+					ks_produk_id = '".$produk_id."'
+					".$isiperiode.") AS total_pembelian, 
+					(SELECT count(*) as total_retur_penjualan from kartu_stok_fix where ks_keterangan = 'retur_produk' and ks_gudang_id='".$gudang."' and
+					ks_produk_id = '".$produk_id."'
+					".$isiperiode.") AS total_retur_penjualan, 
+					(SELECT count(*) as total_retur_pembelian from kartu_stok_fix where ks_keterangan = 'retur_beli' and ks_gudang_id='".$gudang."' and
+					ks_produk_id = '".$produk_id."'
+					".$isiperiode.") AS total_retur_pembelian,
 					ks_tgl_faktur as tanggal,
 					ks_produk_id as produk_id,
 					ks_satuan_id as satuan_id,
 					ks_no_faktur as no_bukti,
+					ks_masuk_rp as stok_harga,
+					CASE 
+					WHEN ks_keterangan = 'jual_produk' THEN customer.cust_nama
+					WHEN ks_keterangan = 'order_beli' THEN supplier.supplier_nama
+					WHEN ks_keterangan = 'retur_produk' THEN customer.cust_nama
+					WHEN ks_keterangan = 'retur_beli' THEN supplier.supplier_nama
+					END AS stok_pelaku,
+					
 					IF(ks_keterangan='jual_produk', CONCAT('Penjualan Produk ',produk.produk_nama),
 					IF(ks_keterangan='terima_beli', CONCAT('Pembelian Produk ',produk.produk_nama),
 					IF(ks_keterangan='order_beli', CONCAT('Pembelian Produk ',produk.produk_nama),
@@ -1068,7 +1088,8 @@ class M_kartu_stok extends Model{
 					ks_gudang_id as gudang_id	
 				FROM kartu_stok_fix
 				LEFT JOIN produk ON (produk.produk_id = kartu_stok_fix.ks_produk_id)
-				
+				LEFT JOIN customer ON (customer.cust_id = kartu_stok_fix.ks_pelaku)
+				LEFT JOIN supplier ON (supplier.supplier_id = kartu_stok_fix.ks_pelaku)
 				WHERE 
 					ks_gudang_id='".$gudang."' AND
 					kartu_stok_fix.ks_produk_id = '".$produk_id."'
