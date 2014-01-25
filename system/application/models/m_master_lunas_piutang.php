@@ -137,28 +137,28 @@ class M_master_lunas_piutang extends Model{
 					(
 						select sum(master_faktur_lunas_piutang.fpiutang_bayar) from master_faktur_lunas_piutang
 						where master_faktur_lunas_piutang.fpiutang_cust = master_lunas_piutang.lpiutang_cust
-						and master_faktur_lunas_piutang.fpiutang_cara = 'tunai'
+						and master_faktur_lunas_piutang.fpiutang_cara = 'tunai' and fpiutang_stat_dok == 'Tertutup'
 						AND date_format(master_lunas_piutang.lpiutang_faktur_tanggal,'%Y-%m')='".$tgl_awal."'
 						
 					) AS piutang_tunai,
 					(
 						select sum(master_faktur_lunas_piutang.fpiutang_bayar) from master_faktur_lunas_piutang
 						where master_faktur_lunas_piutang.fpiutang_cust = master_lunas_piutang.lpiutang_cust
-						and master_faktur_lunas_piutang.fpiutang_cara = 'cek/giro'
+						and master_faktur_lunas_piutang.fpiutang_cara = 'cek/giro' and fpiutang_stat_dok == 'Tertutup'
 						AND date_format(master_lunas_piutang.lpiutang_faktur_tanggal,'%Y-%m')='".$tgl_awal."'
 						
 					) AS piutang_cek,
 					(
 						select sum(master_faktur_lunas_piutang.fpiutang_bayar) from master_faktur_lunas_piutang
 						where master_faktur_lunas_piutang.fpiutang_cust = master_lunas_piutang.lpiutang_cust
-						and master_faktur_lunas_piutang.fpiutang_cara = 'transfer'
+						and master_faktur_lunas_piutang.fpiutang_cara = 'transfer' and fpiutang_stat_dok == 'Tertutup'
 						AND date_format(master_lunas_piutang.lpiutang_faktur_tanggal,'%Y-%m')='".$tgl_awal."'
 						
 					) AS piutang_transfer,
 					(
 						select sum(master_faktur_lunas_piutang.fpiutang_bayar) from master_faktur_lunas_piutang
 						where master_faktur_lunas_piutang.fpiutang_cust = master_lunas_piutang.lpiutang_cust
-						and master_faktur_lunas_piutang.fpiutang_cara = 'card'
+						and master_faktur_lunas_piutang.fpiutang_cara = 'card' and fpiutang_stat_dok == 'Tertutup'
 						AND date_format(master_lunas_piutang.lpiutang_faktur_tanggal,'%Y-%m')='".$tgl_awal."'
 						
 					) AS piutang_card,
@@ -224,7 +224,7 @@ class M_master_lunas_piutang extends Model{
 					(
 						select sum(master_faktur_lunas_piutang.fpiutang_bayar) from master_faktur_lunas_piutang
 						where master_faktur_lunas_piutang.fpiutang_cust = master_lunas_piutang.lpiutang_cust
-						and master_faktur_lunas_piutang.fpiutang_cara = 'tunai'
+						and master_faktur_lunas_piutang.fpiutang_cara = 'tunai' and fpiutang_stat_dok == 'Tertutup'
 						and date_format(master_faktur_lunas_piutang.fpiutang_tanggal,'%Y-%m-%d')>='".$tgl_awal."'
 						and date_format(master_faktur_lunas_piutang.fpiutang_tanggal,'%Y-%m-%d')<='".$tgl_akhir."'
 						
@@ -232,7 +232,7 @@ class M_master_lunas_piutang extends Model{
 					(
 						select sum(master_faktur_lunas_piutang.fpiutang_bayar) from master_faktur_lunas_piutang
 						where master_faktur_lunas_piutang.fpiutang_cust = master_lunas_piutang.lpiutang_cust
-						and master_faktur_lunas_piutang.fpiutang_cara = 'cek/giro'
+						and master_faktur_lunas_piutang.fpiutang_cara = 'cek/giro' and fpiutang_stat_dok == 'Tertutup'
 						and date_format(master_faktur_lunas_piutang.fpiutang_tanggal,'%Y-%m-%d')>='".$tgl_awal."' 
 						and date_format(master_faktur_lunas_piutang.fpiutang_tanggal,'%Y-%m-%d')<='".$tgl_akhir."'
 						
@@ -240,7 +240,7 @@ class M_master_lunas_piutang extends Model{
 					(
 						select sum(master_faktur_lunas_piutang.fpiutang_bayar) from master_faktur_lunas_piutang
 						where master_faktur_lunas_piutang.fpiutang_cust = master_lunas_piutang.lpiutang_cust
-						and master_faktur_lunas_piutang.fpiutang_cara = 'transfer'
+						and master_faktur_lunas_piutang.fpiutang_cara = 'transfer' and fpiutang_stat_dok == 'Tertutup'
 						and date_format(master_faktur_lunas_piutang.fpiutang_tanggal,'%Y-%m-%d')>='".$tgl_awal."' 
 						and date_format(master_faktur_lunas_piutang.fpiutang_tanggal,'%Y-%m-%d')<='".$tgl_akhir."'
 						
@@ -248,7 +248,7 @@ class M_master_lunas_piutang extends Model{
 					(
 						select sum(master_faktur_lunas_piutang.fpiutang_bayar) from master_faktur_lunas_piutang
 						where master_faktur_lunas_piutang.fpiutang_cust = master_lunas_piutang.lpiutang_cust
-						and master_faktur_lunas_piutang.fpiutang_cara = 'card'
+						and master_faktur_lunas_piutang.fpiutang_cara = 'card' and fpiutang_stat_dok == 'Tertutup'
 						and date_format(master_faktur_lunas_piutang.fpiutang_tanggal,'%Y-%m-%d')>='".$tgl_awal."' 
 						and date_format(master_faktur_lunas_piutang.fpiutang_tanggal,'%Y-%m-%d')<='".$tgl_akhir."'
 						

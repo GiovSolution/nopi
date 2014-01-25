@@ -82,14 +82,14 @@ on master_retur_jual_produk.rproduk_id = detail_retur_jual_produk.drproduk_maste
 where
 master_retur_jual_produk.rproduk_stat_dok = 'Tertutup'
 and master_retur_jual_produk.rproduk_cust=master_lunas_piutang.lpiutang_cust
-and master_retur_jual_produk.rproduk_tanggal > '2014-01-01'
+and master_retur_jual_produk.rproduk_tanggal >= '2014-01-01'
 group by master_retur_jual_produk.rproduk_cust),0)
 )
 ) as lpiutang_sisa
 
 						FROM master_lunas_piutang
 						LEFT JOIN customer on (customer.cust_id = master_lunas_piutang.lpiutang_cust)
-						WHERE master_lunas_piutang.lpiutang_stat_dok <> 'Batal' and master_lunas_piutang.lpiutang_faktur_tanggal > '2014-01-01'
+						WHERE master_lunas_piutang.lpiutang_stat_dok <> 'Batal' and master_lunas_piutang.lpiutang_faktur_tanggal >= '2014-01-01'
 
 						";
 			
