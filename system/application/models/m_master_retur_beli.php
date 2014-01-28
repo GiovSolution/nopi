@@ -623,6 +623,7 @@ class M_master_retur_beli extends Model{
 			
 			$sql="UPDATE master_retur_beli SET rbeli_revised=(rbeli_revised+1) WHERE rbeli_id='".$rbeli_id."'";
 			$result = $this->db->query($sql);
+			
 
 			$rs_dbeli_insert = $this->detail_detail_retur_beli_insert($array_drbeli_id ,$rbeli_id ,$array_drbeli_produk ,$array_drbeli_satuan ,$array_drbeli_jumlah ,
 												 $array_drbeli_harga, $array_drbeli_diskon);
